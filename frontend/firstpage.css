@@ -1,0 +1,119 @@
+/* Full-screen hero section */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    width: 100%; /* Assicura che la sezione occupi l'intera larghezza */
+}
+
+/* Navigation bar */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Allinea logo a sinistra e menu a destra */
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 10;
+}
+
+/* Logo settings */
+.navbar .logo img {
+    height: 100px; /* Imposta l'altezza del logo */
+    width: auto;  /* Mantiene il rapporto d'aspetto corretto */
+}
+
+/* Navigation menu */
+.navbar .nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Assicura che i link siano allineati a destra */
+    margin-right: 0;
+    gap: 30px; /* Aggiungi spazio tra i link */
+}
+
+.navbar .nav-menu li {
+    margin: 0;
+}
+
+.navbar .nav-menu li a {
+    text-decoration: none;
+    color: #d75494; /* Colore dei link */
+    font-size: 16px;
+    transition: color 0.3s ease;
+    margin-right: 110px;
+    line-height: 100px;
+}
+
+.navbar .nav-menu li a:hover {
+    color: #f29aa0; /* Colore al passaggio del mouse */
+}
+
+/* Social icons aligned to the far right */
+.social-icons {
+    position: absolute;
+    right: 30px; /* Sposta i social tutto a destra */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.social-icons a {
+    color: #d75494;
+    font-size: 30px;
+    margin: 15px 0;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f29aa0;
+}
+
+/* Left text */
+.hero-text {
+    position: absolute;
+    left: 50px;  /* Sposta il testo tutto a sinistra */
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    z-index: 10;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    color: #f29aa0;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: white;
+}
+
+/* Bouncing arrow */
+.bounce-arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: white;
+    animation: bounce 2s infinite;
+    z-index: 10;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    50% {
+        transform: translateY(-20px) translateX(-50%);
+    }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMNA Q&A e Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #d75494;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #d75494;
+            margin-top: 30px;
+        }
+
+        .faq-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .faq {
+            flex: 1 1 calc(50% - 40px);
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .faq:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .faq h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #d75494;
+        }
+
+        .faq p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+            margin: 30px 0;
+        }
+
+        .button a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #d75494;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button a:hover {
+            background-color: #c34d85;
+        }
+
+        .quiz-section {
+            margin-top: 50px;
+        }
+
+        .quiz-question {
+            margin-bottom: 20px;
+        }
+
+        .quiz-question h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .quiz-options label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>I Perché che danno un senso al nostro percorso</h1>
+
+        <!-- Sezione Q&A -->
+        <div class="faq-container">
+            <div class="faq">
+                <h3>1. Perché questo percorso è diverso da altri?</h3>
+                <p>Perché rieduca il tuo corpo ai movimenti per cui è nato e si è evoluto.</p>
+            </div>
+
+            <div class="faq">
+                <h3>2. Perché la flessibilità è così importante nel metodo DOMNA?</h3>
+                <p>La flessibilità ti permetterà di sfruttare il massimo del potenziale di movimento e dunque è essenziale.</p>
+            </div>
+
+            <div class="faq">
+                <h3>3. Se nelle prime sessioni di allenamento sono rigida, devo forzare per cercare più risultati?</h3>
+                <p>Non è necessario forzare, ma reiterare nel tempo gli stessi movimenti ti darà un passo alla volta la flessibilità che cerchi.</p>
+            </div>
+
+            <div class="faq">
+                <h3>4. È normale provare dolore in alcuni movimenti all'inizio dell'allenamento?</h3>
+                <p>Alcuni movimenti a cui il tuo corpo non è abituato possono procurare inizialmente un dolore, che con il tempo sparirà.</p>
+            </div>
+
+            <div class="faq">
+                <h3>5. Perché forza e flessibilità sono importanti per la fisiologia femminile?</h3>
+                <p>Perché stimolano il dimagrimento e il drenaggio in modo equilibrato in tutto il corpo.</p>
+            </div>
+
+            <div class="faq">
+                <h3>6. In quanto tempo si hanno i primi risultati estetici?</h3>
+                <p>Primi risultati si notano a distanza di poche sedute, anche se spesso è soggettivo.</p>
+            </div>
+
+            <div class="faq">
+                <h3>7. I risultati ottenuti sono stabili nel tempo?</h3>
+                <p>I risultati saranno stabili nel tempo se mantieni costanza nell'allenamento e continui a seguire il percorso DOMNA.</p>
+            </div>
+
+            <div class="faq">
+                <h3>8. Perché è importante allenarsi alla corretta postura?</h3>
+                <p>Una corretta postura è essenziale per regalare un'estetica proporzionata ed equilibrata, risolvendo problemi come cellulite e dolori.</p>
+            </div>
+
+            <div class="faq">
+                <h3>9. Quanto influisce la mia genetica sui miei risultati?</h3>
+                <p>La genetica ha un suo ruolo. Per questo DOMNA ha creato percorsi personalizzati per diverse genetiche.</p>
+            </div>
+
+            <div class="faq">
+                <h3>10. Dopo aver finito il percorso devo continuare ad allenarmi?</h3>
+                <p>Per continuare a migliorarti ed evolvere è necessario progredire con nuovi stimoli, e DOMNA ha in programma nuove sorprese.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Sezione Quiz -->
+        <div class="quiz-section">
+            <h2>Quiz: Scopri il percorso adatto a te</h2>
+
+            <div class="quiz-question">
+                <h3>1. Vuoi allenarti con un programma personalizzato o generale?</h3>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q1" value="personalizzato"> Personalizzato</label>
+                    <label><input type="radio" name="q1" value="generale"> Generale</label>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <h3>2. Preferisci essere seguita da un trainer in videochiamata senza la presenza della trainer o allenarti in presenza con la trainer che ti segue passo passo?</h3>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q2" value="videocall"> Con trainer in videocall</label>
+                    <label><input type="radio" name="q2" value="autonomia"> In autonomia</label>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <h3>3. Quali obiettivi vuoi raggiungere?</h3>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q3" value="pancia-piatta"> Pancia piatta</label>
+                    <label><input type="radio" name="q3" value="tonificazione"> Tonificazione</label>
+                    <label><input type="radio" name="q3" value="dimagrimento">  Dimagrimento</label>
+                    <label><input type="radio" name="q3" value="dimagrimento">  Anti-Cellulite</label>
+                </div>
+            </div>
+
+           
+            <button>Scarica il WorkBook</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
