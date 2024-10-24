@@ -1,0 +1,31 @@
+.pricing-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14em, 1fr)); /* Reducing the min width for smaller cards */
+  grid-gap: 1.5em; /* Slightly reduce the gap between cards */
+}
+
+.pricing-table__item {
+  padding: 1.5em; /* Decrease padding */
+  border-radius: 1em; /* Slightly reduce border radius */
+}
+
+.pricing-table__img {
+  margin: 2em auto 2.5em; /* Decrease top and bottom margin for smaller image placement */
+}
+
+.pricing-table__title {
+  font-size: 1.5em; /* Decrease the font size */
+}
+
+.pricing-table__price {
+  font-size: 2em; /* Decrease the price font size */
+}
+
+.pricing-table__products {
+  margin: 1.5em 0; /* Decrease spacing for the product list */
+}
+
+.pricing-table__button {
+  padding: 0.75em 1.5em; /* Reduce the padding inside the button */
+  border-radius: 1.5em; /* Adjust the button shape */
+}

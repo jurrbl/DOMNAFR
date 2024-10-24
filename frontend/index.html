@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Coaching Overlap Style</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            position: relative;
+            width: 900px;
+            height: 500px;
+            margin-bottom: 250px;
+        }
+
+        .image-section {
+            width: 600px;
+            height: 400px;
+            background: url('challenging-ab-workout-wallpaper-preview.jpg') no-repeat center center;
+            background-size: cover;
+            filter: blur(0.5px);
+            position: absolute;
+        }
+
+        .text-section {
+            position: absolute;
+            top: 150px;
+            width: 420px;
+            background-color: #e4d7d4;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+            text-align: center;
+        }
+
+        /* First Section */
+        .text-section.first {
+            left: 450px;
+        }
+
+        .image-section.first {
+            top: 0;
+            left: 0;
+        }
+
+        /* Second Section (Inverted Layout) */
+        .text-section.second {
+            right: 450px;
+        }
+
+        .image-section.second {
+            top: 0;
+            right: 0;
+        }
+
+        .text-section h2 {
+            font-size: 1.8rem;
+            color: white;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .text-section p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #e6e6fa;
+            color: #d75494;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .button a:hover {
+            background-color: papayawhip;
+        }
+
+        #inner-text {
+            color: #ff69b4;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #d75494;
+            margin: 20px 0;
+        }
+
+        /* Parallax Section */
+        .parallax-section {
+            position: relative;
+            height: 300px;
+            background: url(paralla.jpg) no-repeat center center fixed;
+            background-size: cover;
+            margin: 50px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parallax-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        /* Centrare il contenuto */
+        body, .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <hr> <!-- Separator between sections -->
+
+    <!-- Parallax Section -->
+    <div class="parallax-section">
+        <!-- Solo immagine, senza testo -->
+    </div>
+
+    <hr> <!-- Separator between sections -->
+
+    <!-- First Section -->
+    <div class="container">
+        <div class="image-section first"></div>
+        <div class="text-section first">
+            <h2><strong><b>Metodo DOMNA</b></strong></h2>
+            <hr>
+            <p>Il metodo Domna è un percorso dedicato alle donne che desiderano riscoprire la propria armonia, viaggiare
+                alla riscoperta dei propri sogni, sentire la propria forza, dare spazio a una nuova forma fisica e
+                mentale.</p>
+            <p>Domna è un percorso dedicato alle donne che supporta il cambiamento e la trasformazione attraverso
+                diversi livelli di allenamento, dal propedeutico agli avanzati, basati su obiettivi specifici.</p>
+
+            <p>Il metodo integra il <strong id="inner-text">Woman Functional Training</strong>, che analizza le
+                caratteristiche ormonali femminili, e il <strong id="inner-text">Primitive Functional Movement</strong>,
+                un allenamento che educa il corpo a recuperare il potenziale neuro-motorio attraverso movimenti liberi.
+            </p>
+            <hr>
+            <br>
+            <div class="button">
+                <a href="corsi.html">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+
+    <hr> <!-- Separator between sections -->
+
+    <!-- Second Section (Inverted Layout) -->
+    <div class="container">
+        <div class="image-section second"></div>
+        <div class="text-section second">
+            <h2><strong><b>Obiettivi DOMNA</b></strong></h2>
+            <hr>
+            <p>Domna propone un nuovo punto di vista, funzionale a favorire la trasformazione del tuo corpo e la riscoperta della tua bellezza autentica. Permette di raggiungere in modo duraturo risultati nel tempo!</p>
+
+            <p>Il metodo Domna offre un percorso efficace, alla scoperta della propria migliore forma fisica e della propria bellezza autentica. Ma prima ancora, offre un’occasione preziosa di cambiamento. Nella sua estrema semplicità, Domna propone un punto di vista rivoluzionario: dimentica gli allenamenti (che tendiamo a procrastinare dalla seconda settimana) e immagina una piacevole educazione al movimento.</p>
+
+            <p>Dimentica, inoltre, le diete che stroncano ogni entusiasmo: non è forse meglio imparare a mangiare nel modo giusto, mettendo a tavola creatività e cura di sé?</p>
+            <hr>
+            <br>
+            <div class="button">
+                <a href="corsi.html">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+
+
+
+       <!-- Parallax Section -->
+       <div class="parallax-section">
+        <!-- Solo immagine, senza testo -->
+    </div>
+
+</body>
+
+</html>
