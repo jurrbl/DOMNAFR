@@ -1,0 +1,41 @@
+.carousel-container {
+    width: 1000px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    transition: transform 1s ease-in-out;
+    position: relative;
+    width: 100%;
+}
+
+.faq {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 0 10px;
+    width: 250px;  /* Width of each FAQ rectangle */
+    opacity: 0.6;  /* Less opacity for surrounding items */
+    transition: opacity 1s ease, transform 1s ease;
+    display: none; /* Initially hide all FAQs */
+}
+
+.faq.visible {
+    display: block;
+}
+
+.faq.center {
+    opacity: 1;
+    transform: scale(1.2);  /* Larger and more visible center item */
+}
+
+.faq.left, .faq.right {
+    opacity: 0.6;
+    transform: scale(0.9);  /* Slightly smaller for left and right items */
+}

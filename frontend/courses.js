@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Seleziona tutte le sezioni che devono animarsi, escluso il parallasse
-    const sections = document.querySelectorAll('.fade-in-section:not(.parallax-section)');
+    // Seleziona tutte le sezioni che devono animarsi
+    const sections = document.querySelectorAll('.fade-in-section');
 
     // Funzione per animare le sezioni quando diventano visibili
     const observer = new IntersectionObserver((entries, observer) => {
@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }, { threshold: 0.1 });
 
-    // Osserva ogni sezione tranne il parallasse
+    // Osserva ogni sezione
     sections.forEach(section => {
         observer.observe(section);
     });
 
-    // Testimonianze e animazione lettera per lettera
+    // Testimonianze e animazione fade in/out automatico
     const testimonials = [
         {
             img: "https://randomuser.me/api/portraits/women/44.jpg",
@@ -41,16 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let currentIndex = 0;
 
-    // Funzione per aggiornare la testimonianza con effetto fade
-    function updateTestimonial(direction = 'next') {
+    // Funzione per aggiornare la testimonianza con effetto fade in/out automatico
+    function updateTestimonial() {
         const testimonialContainer = document.querySelector('.testimonial');
 
         testimonialContainer.style.opacity = '0';
-        testimonialContainer.style.transition = 'opacity 0.3s ease';
+        testimonialContainer.style.transition = 'opacity 1s ease-in-out';
 
         setTimeout(() => {
-            currentIndex = direction === 'next' ? (currentIndex + 1) % testimonials.length : (currentIndex - 1 + testimonials.length) % testimonials.length;
-
             const testimonial = testimonials[currentIndex];
             document.getElementById("testimonial-img").src = testimonial.img;
             document.getElementById("testimonial-name").innerText = testimonial.name;
@@ -58,33 +56,12 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("testimonial-text").innerText = testimonial.text;
 
             testimonialContainer.style.opacity = '1';
-        }, 100);
+            currentIndex = (currentIndex + 1) % testimonials.length;
+        }, 1000);
     }
 
-    // Frecce per navigare nelle testimonianze
-    document.querySelector('.prev-arrow').addEventListener('click', () => {
-        updateTestimonial('prev');
-    });
-    document.querySelector('.next-arrow').addEventListener('click', () => {
-        updateTestimonial('next');
-    });
-
+    setInterval(updateTestimonial, 3000);
     updateTestimonial();
-
-    // Animazione per cambiare lo sfondo
-    const backgrounds = document.querySelectorAll('.hero-background');
-    let currentBackgroundIndex = 0;
-
-    function changeBackground() {
-        backgrounds.forEach((background, index) => {
-            background.classList.remove('active');
-        });
-        backgrounds[currentBackgroundIndex].classList.add('active');
-        currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
-    }
-
-    setInterval(changeBackground, 4000);
-    changeBackground();
 
     // Animazione lettera per lettera
     function letterByLetterAnimation(element) {
