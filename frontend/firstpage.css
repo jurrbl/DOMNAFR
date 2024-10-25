@@ -7,7 +7,8 @@
     align-items: center;
     color: white;
     overflow: hidden;
-    width: 100%; /* Assicura che la sezione occupi l'intera larghezza */
+    width: 100%;
+    padding-top: 50px; /* Aggiungi un po' di padding per assicurarti che tutto sia allineato */
 }
 
 /* Navigation bar */
@@ -16,25 +17,28 @@
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Allinea logo a sinistra e menu a destra */
+    justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
     z-index: 10;
+    height: 100px; /* Imposta un'altezza per allineare il logo con le scritte */
 }
 
 /* Logo settings */
 .navbar .logo img {
-    height: 100px; /* Imposta l'altezza del logo */
-    width: auto;  /* Mantiene il rapporto d'aspetto corretto */
+    height: 80px; /* Imposta l'altezza del logo */
+    width: auto;
+    display: inline-block;
+    vertical-align: middle; /* Allinea verticalmente il logo */
 }
 
 /* Navigation menu */
 .navbar .nav-menu {
     list-style: none;
     display: flex;
-    justify-content: flex-end; /* Assicura che i link siano allineati a destra */
-    margin-right: 0;
-    gap: 30px; /* Aggiungi spazio tra i link */
+    justify-content: flex-end;
+    margin-right: 100px;
+    gap: 40PX;
 }
 
 .navbar .nav-menu li {
@@ -43,23 +47,22 @@
 
 .navbar .nav-menu li a {
     text-decoration: none;
-    color: #d75494; /* Colore dei link */
-    font-size: 16px;
+    color: #d75494;
+    font-size: 18px;
     transition: color 0.3s ease;
-    margin-right: 110px;
-    line-height: 100px;
+    margin-right: 30px;
+    line-height: 100px; /* Allinea verticalmente con il logo */
 }
 
 .navbar .nav-menu li a:hover {
-    color: #f29aa0; /* Colore al passaggio del mouse */
+    color: #f29aa0;
 }
 
 /* Social icons aligned to the far right */
 .social-icons {
     position: absolute;
-    right: 30px; /* Sposta i social tutto a destra */
-    top: 50%;
-    transform: translateY(-50%);
+    right: 30px;
+    bottom: 50%; /* Allinea con la scritta Domna */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,9 +83,8 @@
 /* Left text */
 .hero-text {
     position: absolute;
-    left: 50px;  /* Sposta il testo tutto a sinistra */
-    top: 50%;
-    transform: translateY(-50%);
+    left: 50px;
+    bottom: 50%;  /* Allinea con le icone social */
     text-align: left;
     z-index: 10;
 }
@@ -90,13 +92,15 @@
 .hero-text h1 {
     font-size: 60px;
     color: #f29aa0;
+    margin: 0;
 }
 
 .hero-text p {
     font-size: 18px;
     color: white;
+    margin-top: 5px;
 }
-
+/*  */
 /* Bouncing arrow */
 .bounce-arrow {
     position: absolute;
@@ -116,4 +120,34 @@
     50% {
         transform: translateY(-20px) translateX(-50%);
     }
+}
+
+
+.hero-text span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.hero-text span.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+#animated-text{
+    color: black;
+}
+.text-container span {
+    display: inline-block;
+    margin-right: 2px; /* Spazio tra le lettere */
+}
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }

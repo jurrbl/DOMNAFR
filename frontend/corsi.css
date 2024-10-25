@@ -18,8 +18,7 @@ body {
 .image-section {
   width: 600px;
   height: 400px;
-  background: url("challenging-ab-workout-wallpaper-preview.jpg") no-repeat
-    center center;
+  background: url("challenging-ab-workout-wallpaper-preview.jpg") no-repeat center center;
   background-size: cover;
   filter: blur(0.5px);
   position: absolute;
@@ -66,7 +65,7 @@ body {
   line-height: 1.6;
   color: #555;
   margin-bottom: 20px;
-  font-weight: bold ;
+  font-weight: bold;
 }
 
 .button {
@@ -90,7 +89,7 @@ body {
 
 .parallax-section {
   position: relative;
-  height: 300px;
+  height: 300px; /* Altezza ridotta per migliorare l'aspetto */
   background: url("paralla.jpg") no-repeat center center fixed;
   background-size: cover;
   margin: 50px 0;
@@ -107,8 +106,7 @@ body {
 
 .testimonials-wrapper {
   position: relative;
-  max-width: 2000px;
-  width:1000px;
+  max-width: 1000px;
   margin: 50px auto;
   overflow: hidden;
   background-color: white;
@@ -124,11 +122,9 @@ body {
   color: #333;
   line-height: 1.6;
   text-align: center;
-  max-width: 800px; /* Imposta una larghezza massima per il testo */
-  margin: 0 auto; /* Allinea il testo al centro */
+  max-width: 800px;
+  margin: 0 auto;
 }
-
-
 
 .prev-arrow,
 .next-arrow {
@@ -137,10 +133,8 @@ body {
   transform: translateY(-50%);
   font-size: 20px;
   color: #d75494 !important;
-  /* Colore rosa */
   cursor: pointer;
   z-index: 10;
-
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -148,20 +142,16 @@ body {
 .prev-arrow {
   left: -55px;
   top: 54%;
-  /* Sposta la freccia leggermente all'interno del container */
 }
 
 .next-arrow {
   right: -55px;
   top: 54%;
-  /* Sposta la freccia leggermente all'interno del container */
 }
 
-/* Nessun cambiamento di colore all'hover */
 .prev-arrow:hover,
 .next-arrow:hover {
   color: #d75494;
-  /* Mantieni il colore rosa anche al passaggio del mouse */
 }
 
 .testimonial {
@@ -192,16 +182,11 @@ body {
   margin-bottom: 10px;
 }
 
-
-
-.review-testimonial-text{
+.review-testimonial-text {
   font-size: 35pt;
   font-weight: bold;
   color: white;
 }
-
-
-
 
 .contact-section {
   background-color: #f4d6e4;
@@ -211,18 +196,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px; /* Altezza aumentata per più spazio */
+  height: auto;
 }
 
 .container {
-  max-width: 500px; /* Ridotto per allineare meglio il form */
+  max-width: 500px;
   width: 100%;
   margin: 0 auto;
 }
 
 .contact-form {
   display: flex;
-  flex-direction: column; /* Modificato per avere una colonna */
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -232,7 +217,7 @@ body {
   border-radius: 5px;
   font-size: 16px;
   margin-top: 20px;
-  width: 100%; /* Fissato al 100% della larghezza del contenitore */
+  width: 100%;
 }
 
 .contact-button {
@@ -245,7 +230,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 35%; /* Fissato anche il pulsante al 100% */
+  width: 35%;
   margin: 0 auto;
 }
 
@@ -270,17 +255,20 @@ body {
 }
 
 .social-icons {
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .social-icons a {
-    text-decoration: none;
-    color: #9B6464; /* Colore delle icone */
-    margin: 0 15px;
-    font-size: 24px; /* Dimensione delle icone */
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #9B6464;
+  font-size: 24px;
+  transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #d75494; /* Cambia colore al passaggio del mouse */
+  color: #d75494;
 }
+
