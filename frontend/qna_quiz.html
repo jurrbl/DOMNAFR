@@ -3,109 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Improved Review Carousel</title>
+    <title>Q&A Squares Carousel</title>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Josefin Sans', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f9f9f9;
-        }
-
-        .carousel-container {
-            width: 450px; /* Adjusted size for the container */
-            height: 300px;
-            overflow: hidden;
-            position: relative;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .carousel {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        .review {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            padding: 40px;
-            background-color: #FFB6C1;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            opacity: 0;
-            animation: fadeInOut 18s infinite; /* Updated animation */
-        }
-
-        .review h3 {
-            margin-bottom: 10px;
-            font-size: 24px; /* Adjusted for better visibility */
-            font-weight: 600;
-            color: #FF1493; /* Darker pink for heading */
-        }
-
-        .review p {
-            font-size: 18px;
-            font-weight: 300;
-            color: #333;
-        }
-
-        /* Improved animation for smoother transitions */
-        @keyframes fadeInOut {
-            0%, 25% {
-                opacity: 1;
-            }
-            35%, 100% {
-                opacity: 0;
-            }
-        }
-
-        .review:nth-child(2) {
-            animation-delay: 6s;
-        }
-        .review:nth-child(3) {
-            animation-delay: 12s;
-        }
-
-    </style>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="corsi.css">
 </head>
 <body>
 
+    <div class="parallax-section-quiz">
+        <p class="review-testimonial-text">Domande Frequenti</p>
+      </div>
+
+    <!-- Carousel Container -->
     <div class="carousel-container">
         <div class="carousel">
-            <div class="review">
-                <h3>Review 1</h3>
-                <p>Great course! It really helped me improve my flexibility and strength.</p>
+            <!-- Q&A Square Items -->
+            <div class="carousel-item">
+                <div class="qa-number">01</div>
+                <h3>Perché questo percorso è diverso da altri?</h3>
+                <p>Perché rieduca il tuo corpo ai movimenti per cui è nato e si è evoluto.</p>
             </div>
-            <div class="review">
-                <h3>Review 2</h3>
-                <p>Love the step-by-step guidance. The exercises are easy to follow and effective.</p>
+            <div class="carousel-item">
+                <div class="qa-number">02</div>
+                <h3>Perché la flessibilità è così importante nel metodo DOMNA?</h3>
+                <p>La flessibilità ti permetterà di sfruttare il massimo del potenziale di movimento e dunque è essenziale.</p>
             </div>
-            <div class="review">
-                <h3>Review 3</h3>
-                <p>The best fitness routine I've tried. My posture has improved a lot.</p>
+            <div class="carousel-item">
+                <div class="qa-number">03</div>
+                <h3>Se nelle prime sessioni di allenamento sono rigida, devo forzare per cercare più risultati?</h3>
+                <p>Non è necessario forzare, ma reiterare nel tempo gli stessi movimenti ti darà un passo alla volta la flessibilità che cerchi.</p>
+            </div>
+            <div class="carousel-item">
+                <div class="qa-number">04</div>
+                <h3>È normale provare dolore in alcuni movimenti all'inizio dell'allenamento?</h3>
+                <p>Alcuni movimenti a cui il tuo corpo non è abituato possono procurare inizialmente un dolore, che con il tempo sparirà.</p>
+            </div>
+            <div class="carousel-item">
+                <div class="qa-number">05</div>
+                <h3>Perché forza e flessibilità sono importanti per la fisiologia femminile?</h3>
+                <p>Perché stimolano il dimagrimento e il drenaggio in modo equilibrato in tutto il corpo.</p>
+            </div>
+            <div class="carousel-item">
+                <div class="qa-number">06</div>
+                <h3>In quanto tempo si hanno i primi risultati estetici?</h3>
+                <p>I primi risultati si notano a distanza di poche sedute, anche se spesso è soggettivo.</p>
+            </div>
+            <div class="carousel-item">
+                <div class="qa-number">07</div>
+                <h3>I risultati ottenuti sono stabili nel tempo?</h3>
+                <p>I risultati saranno stabili nel tempo se mantieni costanza nell'allenamento e continui a seguire il percorso DOMNA.</p>
+            </div>
+            <div class="carousel-item">
+                <div class="qa-number">08</div>
+                <h3>Perché è importante allenarsi alla corretta postura?</h3>
+                <p>Una corretta postura è essenziale per regalare un'estetica proporzionata ed equilibrata, risolvendo problemi come cellulite e dolori.</p>
+            </div>
+            <div class="carousel-item">
+                <div class="qa-number">09</div>
+                <h3>Quanto influisce la mia genetica sui miei risultati?</h3>
+                <p>La genetica ha un suo ruolo. Per questo DOMNA ha creato percorsi personalizzati per diverse genetiche.</p>
+            </div>
+            <div class="carousel-item">
+                <div class="qa-number">10</div>
+                <h3>Dopo aver finito il percorso devo continuare ad allenarmi?</h3>
+                <p>Per continuare a migliorarti è evolvere è necessario progredire con sempre nuovi stimoli ma DOMNA ha in programma di non farti mai annoiare.</p>
             </div>
         </div>
     </div>
+    
+    <div class="parallax-section-separator">
+        <p class="review-testimonial-text">Scopri Di Più</p>
+    </div>
 
+
+
+    
+
+
+    <script src="quiz.js"></script>
 </body>
 </html>

@@ -61,7 +61,7 @@ body {
 }
 
 .text-section p {
-  font-size: 14px;
+  font-size: 14.5px;
   line-height: 1.6;
   color: #555;
   margin-bottom: 20px;
@@ -87,6 +87,15 @@ body {
   background-color: #ffffff;
 }
 
+
+
+.div-separator {
+  border: 1px solid #ccc;
+  width: 75%;
+}
+
+
+
 .parallax-section {
   position: relative;
   height: 300px; /* Altezza ridotta per migliorare l'aspetto */
@@ -98,15 +107,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.div-separator {
-  border: 1px solid #ccc;
-  width: 75%;
-}
-
-
-
-
 
 
 

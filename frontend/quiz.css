@@ -1,41 +1,173 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+    background-color: #fef6fa; /* Sfondo rosa chiaro */
+    overflow: auto; /* Enable scrolling */
+}
+
+/* Container del Carosello */
 .carousel-container {
-    width: 1000px;
-    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Traccia del Carosello */
+.carousel {
+    display: flex;
+    animation: scroll 120s linear infinite; /* Scorrimento più lento per una maggiore visibilità */
+    width: calc(60vh * 10); /* Larghezza totale per contenere tutti gli elementi */
+    animation-play-state: running; /* Start with the animation running */
+}
+
+/* Elemento Singolo del Q&A - Quadrato */
+.carousel-item {
+    width: 30vh;
+    height: 30vh;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(145deg, #ffe6f0, #ffc2d1);
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    margin-right: 30px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Stile Numero di Domanda */
+.qa-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d64d7e;
+    margin-bottom: 8px;
+}
+
+/* Stile Domanda */
+.carousel-item h3 {
+    font-size: 18px;
+    color: #e75480;
+    line-height: 1.3;
+    font-weight: bold;
+    margin-bottom: 8px;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Stile Risposta */
+.carousel-item p {
+    font-size: 16px;
+    color: #b83b6e;
+    line-height: 1.4;
+    text-align: center;
+    max-width: 90%;
+    max-height: 60%;
+    padding: 5px;
+    overflow-wrap: break-word;
+}
+
+/* Animazione Scorrimento Infinito */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50vh * 10));
+    }
+}
+
+/* Parallax Section for FAQ */
+.parallax-section-quiz {
     position: relative;
+    height: 1200px;
+    background: url("paralla.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px; /* Spacing below the FAQ section */
 }
 
-.carousel {
+/* Parallax Separator Section */
+.parallax-section-separator {
+    position: relative;
+    height: 500px;
+    background: url("paralla.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
     display: flex;
     justify-content: center;
-    transition: transform 1s ease-in-out;
-    position: relative;
-    width: 100%;
+    align-items: center;
+    padding-bottom: 50px;
 }
 
-.faq {
-    border: 2px solid black;
-    padding: 20px;
-    margin: 0 10px;
-    width: 250px;  /* Width of each FAQ rectangle */
-    opacity: 0.6;  /* Less opacity for surrounding items */
-    transition: opacity 1s ease, transform 1s ease;
-    display: none; /* Initially hide all FAQs */
+.separator-text {
+    font-weight: bold;
 }
 
-.faq.visible {
-    display: block;
+/* Survey Section */
+.survey-section {
+    background-color: #fff5f8;
+    padding: 40px;
+    text-align: center;
+    padding-top: 60px; /* Spacing above survey */
+    padding-bottom: 60px; /* Spacing below survey */
 }
 
-.faq.center {
-    opacity: 1;
-    transform: scale(1.2);  /* Larger and more visible center item */
+.survey-section h2 {
+    color: #e75480;
+    margin-bottom: 20px;
 }
 
-.faq.left, .faq.right {
-    opacity: 0.6;
-    transform: scale(0.9);  /* Slightly smaller for left and right items */
+#survey-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.checkbox-group label, .radio-group label {
+    background-color: #ffe6f0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #b83b6e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button[type="submit"] {
+    background-color: #e75480;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #d64d7e;
 }
