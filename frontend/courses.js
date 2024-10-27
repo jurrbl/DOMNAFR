@@ -93,4 +93,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const animatedText = document.getElementById('animated-text');
     letterByLetterAnimation(animatedText);
+
+    // JavaScript Function to Create Fade In and Fade Out Effect for Background Images
+    let backgroundIndex = 0;
+
+    function fadeInOutBackground() {
+        const backgrounds = document.querySelectorAll('.hero-background');
+
+        // Hide all background images except the one currently active
+        backgrounds.forEach((background, index) => {
+            if (index === backgroundIndex) {
+                background.style.opacity = 1;
+                background.style.transition = 'opacity 1s ease-in';
+            } else {
+                background.style.opacity = 0;
+                background.style.transition = 'opacity 1s ease-out';
+            }
+        });
+
+        // Update the index to show the next background
+        backgroundIndex = (backgroundIndex + 1) % backgrounds.length;
+    }
+
+    // Set an interval to change the background every 5 seconds
+    setInterval(fadeInOutBackground, 5000);
+
+    // Initialize the first background when the page loads
+    fadeInOutBackground();
 });
