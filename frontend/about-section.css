@@ -1,0 +1,56 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.hero-text-about-section {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.hero-text-about-section h1 {
+    font-size: 60px;
+    color: #f29aa0;
+    margin: 0;
+}
+
+
+.bounce-arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: pink;
+    animation: bounce 2s infinite;
+    z-index: 10;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    50% {
+        transform: translateY(-20px) translateX(-50%);
+    }
+}
+
+
+.bounce-arrow i {
+    color: pink; /* O usa un codice colore specifico come #ff69b4 per un rosa più acceso */
+  }
+  
+  #bounceArr {
+    position: absolute;
+    color: pink;
+    bottom: 80px;
+    cursor: pointer;
+  }
