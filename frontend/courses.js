@@ -115,6 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
         backgroundIndex = (backgroundIndex + 1) % backgrounds.length;
     }
 
+    
     // Set an interval to change the background every 5 seconds
     setInterval(fadeInOutBackground, 5000);
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,62 +8,247 @@
     <link rel="shortcut icon" href="1-011b8c61.ico" type="image/x-icon">
     <link rel="stylesheet" href="firstpage.css">
     <link rel="stylesheet" href="corsi.css">
-    <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
-    rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="stylesheet" href="about-section.css">
-
+    <script src="courses.js"></script>
+    <script src="toggle-animate-dropdown.js"></script>
 </head>
+
 <body>
     <section class="hero">
         <nav class="navbar">
-          <div class="logo">
-            <img src="logo-removebg.png" id="logonav" alt="Domna Logo" />
-          </div>
-          <ul class="nav-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="about-section.html" style="text-decoration:underline;">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
+            <div class="logo">
+                <img src="logo-removebg.png" id="logonav" alt="Domna Logo" />
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="about-section.html" style="text-decoration:underline;">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
         </nav>
-  <!-- Background images -->
-      <div class="hero-background" style="background-image: url('Dalle 2.webp');"></div>
-      <div class="hero-background" style="background-image: url('Dalle 3.webp');"></div>
-      <div class="hero-background" style="background-image: url('Dalle 4.webp');"></div>
-  
-          
-  
-        <!-- Main text content -->
         <div class="hero-text-about-section">
-          <h1>Conosci Marcella</h1>
+            <h1 id="presentation-abt-h2">Conosci Marcella</h1>
+        </div>
+        <div class="bounce-arrow">
+            <i class="fas fa-chevron-down" id="bounceArr" style="color: pink;"></i>
+        </div>
+    </section>
+
+
+
+
+    <div class="container-about-section fade-in-section">
+        <div class="image-section-first-about"></div>
+        <div class="text-section-about-html second">
+            <h2 id="story-texth2"><b>La Mia Storia</b></h2>
+
+            <p class="paragraph-section-second-presentation">
+                Sono contento tu sia qui!
+            </p>
+            <p class="paragraph-section-second">
+                Sono prima di tutto una donna in continua evoluzione. La passione per la naturopatia si è conciliata con
+                l’amore per il movimento e per lo sport, fino a creare un quadro completo. I nuovi progetti sono sempre
+                dietro l’angolo, perché ogni viaggio è sempre una scoperta, ogni arrivo si trasforma in un punto di
+                partenza.
+            </p>
+            <p class="paragraph-section-second">
+                Sono una donna dinamica. La voglia di incontrare altre donne è sempre stata predominante: la maggior
+                parte dei percorsi che propongo nascono dai loro racconti, dall’ascolto delle loro esigenze. Per capire
+                le donne, del resto, basta prendersi il tempo di ascoltarle.
+            </p>
+        </div>
+    </div>
+    </div>
+    <div class="separator-hr">
+        <hr id="separator-mindset">
+    </div>
+
+    <div class="separator-mindst">
+        <div class="mindset-container">
+            <div class="mindset-column">
+                <h2 class="mindset-title">VECCHIA MENTALITÀ</h2>
+                <p class="mindset-text">
+                    Ho seguito gli estremi del fitness. Sono stata schiava della palestra. Avevo l'8% di massa grassa.
+                    Ho limitato i carboidrati e le calorie. Dall'esterno sembravo "sana" e venivo elogiata per la mia
+                    disciplina. Ora posso dirvi che ciò che sembra sano dall'esterno non è sempre sano dall'interno.
+                </p>
+                <p class="mindset-text">
+                    Il mio corpo era malato. Ero infertile, senza libido, sempre fredda, ansiosa, con i capelli che si
+                    assottigliavano, mancanza di spazio mentale ed energia per cose diverse dal cibo e dall'esercizio
+                    fisico, e mai soddisfatta del mio corpo: non era mai abbastanza.
+                </p>
+            </div>
+
+            <div class="mindset-column">
+                <h2 class="mindset-title">NUOVA MENTALITÀ</h2>
+                <p class="mindset-text">
+                    Ora so che la salute è molto più del numero sulla bilancia o della percentuale di massa grassa.
+                    Credo che si possa fare qualcosa per se stessi ogni singolo giorno, perseguendo la salute senza
+                    esaurirsi (e senza scombussolare i propri ormoni nel processo). La vera salute considera la salute
+                    mentale, insieme alla salute fisica, e può essere mantenuta in tutte le stagioni e fasi della vita.
+                </p>
+                <p class="mindset-text">
+                    Lasciamo da parte gli estremi e diventiamo sani per il lungo periodo!
+                    <br><br>
+                    (<a href="#" class="mindset-link">Leggi di più sul mio percorso di recupero HA qui</a>)
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="separator-hr-second">
+        <hr id="separator-mindset-second">
+    </div>
+   
+
+    
+    <div class="container-about-section third">
+        <div class="image-section-third-about"></div>
+        <div class="text-section-about-html third">
+            <h2 id="specialty-texth2"><b>La Mia Specialità</b></h2>
+            
+            <p class="paragraph-section-third-presentation">
+                Sono felice di lavorare con te!
+            </p>
+            <p class="paragraph-section-third">
+                L’impegno è stato tanto e la mia formazione professionale è continua. Un esempio? Per garantire la massima competenza sia in termini di educazione al movimento sia in competenza in ambito nutrizionale, ho conseguito il diploma di Nutraceutica Sport Consultant presso CNM Italia, che conferisce il Diploma rilasciato da CNM UK – The College of Naturopathic Medicine UK, oltre alle certificazioni in Woman Functional Training e Primitive Movement presso la WTA Academy.
+            </p>
+            <p class="paragraph-section-third">
+                Ma sono soprattutto una donna grata, perché tante, tantissime donne mi hanno permesso di entrare nella loro vita, di condividerne gli obiettivi, di dar animo ai desideri, di offrire spazio ai sogni, di gioire degli incredibili risultati. Essere in contatto con le donne in trasformazione, metterne in luce la forza creativa, prendere parte alla loro rinascita, per me è pura gioia.                
+            </p>
+        </div>
+    </div>
+   
+
+    <div class="separator-hr-third">
+        <hr id="separator-mindset-third">
+    </div>
+   
+   
+
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion('credentials')">
+                <span>Referenze</span>
+                <span class="accordion-toggle">+</span>
+            </div>
+            <div class="accordion-content" id="credentials">
+                <p>BS Exercise Sports Science - University of Utah 2013</p>
+                <p>ACSM Exercise Physiologist</p>
+                <p>TRX Certified Instructor</p>
+                <p>Certified Pre- & Postnatal Coach</p>
+                <p>Schwinn Certified Spin Instructor</p>
+            </div>
         </div>
         
-
-        <div class="container fade-in-section">
-            <div class="image-section-first"></div>
-            <div class="text-section first">
-              <h2><b>La mia storia</b></h2>
-              <hr />
-              <p class="paragraph-section-first">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit deleniti laboriosam nobis, quaerat consequatur omnis alias aspernatur enim eius illum laudantium mollitia natus recusandae placeat cum dolorem voluptate. Harum, nulla?
-                
-              </p>
-              <p class="paragraph-section-first">
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium nihil cum nobis ipsum. Eaque cupiditate odio, ipsum iure, nesciunt aliquid sed numquam maiores, ullam corporis nostrum amet omnis consequuntur illum.              </p>
-              <hr />
-              <div class="button">
-                <a href="corsi.html">Scopri di più</a>
-              </div>
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion('experience')">
+                <span>Esperienze</span>
+                <span class="accordion-toggle">+</span>
             </div>
-          </div>
-  
-        <!-- Bouncing arrow -->
-        <div class="bounce-arrow">
-          <i class="fas fa-chevron-down" id="bounceArr" style="color: pink;"></i>
+            <div class="accordion-content" id="experience">
+                <!-- Inserisci i dettagli dell'esperienza qui -->
+                <p>Dettagli esperienza...</p>
+            </div>
         </div>
-      </section>
+        
+    </div>
+
+    <div class="separator-hr-fourth">
+        <hr id="separator-mindset-fourth">
+    </div>
+    
+    <div class="parallax-section">
+        <p class="review-testimonial-text">SU MISURA PER TE <br></p>
+      </div>
+
+
+      <div class="service-cards">
+        <div class="card">
+            <div class="card-image" style="background-image: url('blog1.jpg');">
+                <div class="card-overlay">ALLENAMENTO FUNZIONALE</div>
+            </div>
+            <h3 class="card-title">Allenamento Femminile</h3>
+            <p class="card-text">
+                <b>Allenamento Funzionale Femminile</b><br>
+                L’allenamento funzionale femminile aiuta il corpo a riscoprire movimenti complessi e stimola coordinazione, torsione, e mobilità. Per le donne, è essenziale combinare ipertrofia e tonificazione con mobilità articolare e stimoli miofasciali. Un buon programma inizia con la forza e la mobilità di base (PERCORSO STARTER) e prosegue con percorsi personalizzati avanzati. L’allenamento rispetta le differenze di genere, garantendo risultati e salute.
+            </p>
+            <button class="learn-more">LEARN MORE</button>
+        </div>
+    
+        <div class="card">
+            <div class="card-image" style="background-image: url('blog2.jpg');">
+                <div class="card-overlay">BENEFICI DELLO SPORT</div>
+            </div>
+            <h3 class="card-title">Tocco Personale</h3>
+            <p class="card-text">
+                <b>Benefici dello Sport per le Donne</b><br>
+                Lo sport migliora l’umore grazie all’endorfina, gestisce lo stress, e supporta un sonno migliore. È anche utile per affrontare disturbi alimentari e sbalzi ormonali. Fare esercizio protegge la salute cardiovascolare, mantenendo colesterolo e pressione sotto controllo. Bastano 20 minuti al giorno per iniziare a ottenere benefici per la salute e il benessere generale.
+            </p>
+            <button class="learn-more">LEARN MORE</button>
+        </div>
+    
+        <div class="card">
+            <div class="card-image" style="background-image: url('blog3.jpeg');">
+                <div class="card-overlay">COACHING ONLINE</div>
+            </div>
+            <h3 class="card-title">Per la tua comodità  </h3>
+            <p class="card-text">
+                <b>Caratteristiche dell'Allenamento Funzionale Femminile</b><br>
+                L’allenamento funzionale femminile considera le esigenze uniche delle donne, come metabolismo e ormoni, creando percorsi personalizzati. Questo tipo di allenamento punta a migliorare equilibrio fisiologico, forma fisica, energia, salute e autostima, con un approccio scientifico che offre risultati duraturi e benessere.
+            </p>
+            <button class="learn-more">LEARN MORE</button>
+        </div>
+    </div>
+    
+    
+    <div class="service-cards">
+        <div class="card">
+            <div class="card-image" style="background-image: url('blog1.jpg');">
+                <div class="card-overlay">ALLENAMENTO FUNZIONALE</div>
+            </div>
+            <h3 class="card-title">Allenamento Femminile</h3>
+            <p class="card-text">
+                <b>Allenamento Funzionale Femminile</b><br>
+                L’allenamento funzionale femminile aiuta il corpo a riscoprire movimenti complessi e stimola coordinazione, torsione, e mobilità. Per le donne, è essenziale combinare ipertrofia e tonificazione con mobilità articolare e stimoli miofasciali. Un buon programma inizia con la forza e la mobilità di base (PERCORSO STARTER) e prosegue con percorsi personalizzati avanzati. L’allenamento rispetta le differenze di genere, garantendo risultati e salute.
+            </p>
+            <button class="learn-more">LEARN MORE</button>
+        </div>
+    
+        <div class="card">
+            <div class="card-image" style="background-image: url('blog2.jpg');">
+                <div class="card-overlay">BENEFICI DELLO SPORT</div>
+            </div>
+            <h3 class="card-title">Tocco Personale</h3>
+            <p class="card-text">
+                <b>Benefici dello Sport per le Donne</b><br>
+                Lo sport migliora l’umore grazie all’endorfina, gestisce lo stress, e supporta un sonno migliore. È anche utile per affrontare disturbi alimentari e sbalzi ormonali. Fare esercizio protegge la salute cardiovascolare, mantenendo colesterolo e pressione sotto controllo. Bastano 20 minuti al giorno per iniziare a ottenere benefici per la salute e il benessere generale.
+            </p>
+            <button class="learn-more">LEARN MORE</button>
+        </div>
+    
+        <div class="card">
+            <div class="card-image" style="background-image: url('blog3.jpeg');">
+                <div class="card-overlay">COACHING ONLINE</div>
+            </div>
+            <h3 class="card-title">Per la tua comodità  </h3>
+            <p class="card-text">
+                <b>Caratteristiche dell'Allenamento Funzionale Femminile</b><br>
+                L’allenamento funzionale femminile considera le esigenze uniche delle donne, come metabolismo e ormoni, creando percorsi personalizzati. Questo tipo di allenamento punta a migliorare equilibrio fisiologico, forma fisica, energia, salute e autostima, con un approccio scientifico che offre risultati duraturi e benessere.
+            </p>
+            <button class="learn-more">LEARN MORE</button>
+        </div>
+    </div>
+
+    <div class="parallax-section">
+        <p class="review-testimonial-text">Hai Domande?<br></p>
+        <input type="email" name="" id="">
+      </div>
+
+    
 </body>
+
 </html>
