@@ -7,48 +7,60 @@
 
 html, body {
     font-family: 'Josefin Sans', sans-serif;
-    height: 100%;
-    background-color: #fef6fa; /* Sfondo rosa chiaro */
-    overflow: auto; /* Enable scrolling */
+    background-color: #fef6fa; /* Light pink background */
+    overflow-x: hidden;
 }
 
-/* Container del Carosello */
+/* Parallax Section for FAQ */
+.parallax-section-quiz {
+    position: relative;
+    height: 500px;
+    background: url("paralla.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 150px; /* Added spacing below */
+}
+
+/* Carousel Container */
 .carousel-container {
-    width: 100vw;
-    height: 100vh;
+    width: 80vw; /* 80% of viewport width */
+    max-width: 1200px;
+    margin: 0 auto;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 0; /* Added padding above and below carousel */
 }
 
-/* Traccia del Carosello */
+/* Carousel Track */
 .carousel {
     display: flex;
-    animation: scroll 120s linear infinite; /* Scorrimento più lento per una maggiore visibilità */
-    width: calc(60vh * 10); /* Larghezza totale per contenere tutti gli elementi */
-    animation-play-state: running; /* Start with the animation running */
+    animation: scroll 150s linear infinite;
 }
 
-/* Elemento Singolo del Q&A - Quadrato */
+/* Q&A Square Item */
 .carousel-item {
     width: 30vh;
     height: 30vh;
-    flex: 0 0 auto;
+    background: linear-gradient(145deg, #ffe6f0, #ffc2d1);
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    margin-right: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     text-align: center;
-    background: linear-gradient(145deg, #ffe6f0, #ffc2d1);
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-    margin-right: 30px;
-    padding: 20px;
-    overflow: hidden;
 }
 
-/* Stile Numero di Domanda */
+/* Question Number Style */
 .qa-number {
     font-size: 20px;
     font-weight: bold;
@@ -56,7 +68,7 @@ html, body {
     margin-bottom: 8px;
 }
 
-/* Stile Domanda */
+/* Question Text Style */
 .carousel-item h3 {
     font-size: 18px;
     color: #e75480;
@@ -67,19 +79,17 @@ html, body {
     text-align: center;
 }
 
-/* Stile Risposta */
+/* Answer Text Style */
 .carousel-item p {
     font-size: 16px;
     color: #b83b6e;
     line-height: 1.4;
     text-align: center;
-    max-width: 90%;
-    max-height: 60%;
+    max-width: 100%;
     padding: 5px;
-    overflow-wrap: break-word;
 }
 
-/* Animazione Scorrimento Infinito */
+/* Infinite Scrolling Animation */
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -89,17 +99,8 @@ html, body {
     }
 }
 
-/* Parallax Section for FAQ */
-.parallax-section-quiz {
-    position: relative;
-    height: 1200px;
-    background: url("paralla.jpg") no-repeat center center fixed;
-    background-size: cover;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px; /* Spacing below the FAQ section */
+.carousel {
+    animation: scroll 150s linear infinite;
 }
 
 /* Parallax Separator Section */
@@ -112,62 +113,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
-}
-
-.separator-text {
+    color: #fff;
+    font-size: 2.5em;
     font-weight: bold;
-}
-
-/* Survey Section */
-.survey-section {
-    background-color: #fff5f8;
-    padding: 40px;
-    text-align: center;
-    padding-top: 60px; /* Spacing above survey */
-    padding-bottom: 60px; /* Spacing below survey */
-}
-
-.survey-section h2 {
-    color: #e75480;
-    margin-bottom: 20px;
-}
-
-#survey-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.checkbox-group, .radio-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.checkbox-group label, .radio-group label {
-    background-color: #ffe6f0;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #b83b6e;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-button[type="submit"] {
-    background-color: #e75480;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button[type="submit"]:hover {
-    background-color: #d64d7e;
+    margin-top: 250px; /* Added spacing above */
 }

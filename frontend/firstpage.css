@@ -22,6 +22,9 @@
     padding: 20px 50px;
     z-index: 10;
     height: 100px; /* Imposta un'altezza per allineare il logo con le scritte */
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
 }
 
 /* Logo settings */
@@ -37,8 +40,9 @@
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    margin-right: 100px;
+    margin-right: 120px;
     gap: 40PX;
+
 }
 
 .navbar .nav-menu li {
@@ -48,9 +52,9 @@
 .navbar .nav-menu li a {
     text-decoration: none;
     color: #d75494;
-    font-size: 18px;
+    font-size: 15px;
     transition: color 0.3s ease;
-    margin-right: 30px;
+    margin-right: 20px;
     line-height: 100px; /* Allinea verticalmente con il logo */
 }
 
@@ -61,12 +65,13 @@
 /* Social icons aligned to the far right */
 .social-icons {
     position: absolute;
-    right: 30px;
-    bottom: 50%; /* Allinea con la scritta Domna */
+    right: 60px;
+    bottom: 48%; /* Allinea con la scritta Domna */
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 10;
+
 }
 
 .social-icons a {
@@ -150,4 +155,10 @@
 .fade-in-section.is-visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
 }
