@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="about-section.css">
     <script src="courses.js"></script>
     <script src="toggle-animate-dropdown.js"></script>
+    <script src="about.js"></script>
 </head>
 
 <body>
@@ -23,12 +24,20 @@
                 <img src="logo-removebg.png" id="logonav" alt="Domna Logo" />
             </div>
             <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about-section.html" style="text-decoration:underline;">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Blog</a></li>
+                <li><a href="#">Profilo</a></li>
             </ul>
         </nav>
+        <div class="dot-navigation">
+            <span class="dot" data-section="hero"></span>
+            <span class="dot" data-section="about"></span>
+            <span class="dot" data-section="mindset"></span>
+            <span class="dot" data-section="specialty"></span>
+        </div>
+
         <div class="hero-text-about-section">
             <h1 id="presentation-abt-h2">Conosci Marcella</h1>
         </div>
@@ -245,10 +254,15 @@
         </div>
     </div>
 
+    
     <div class="parallax-section">
-        <p class="review-testimonial-text">Hai Domande?<br></p>
-        <input type="email" name="" id="">
-      </div>
+        <div class="contact-content">
+            <p class="review-testimonial-text">Hai Domande?</p>
+            <a href="mailto:info@domna.net" class="contact-button">Contatta Marcella</a>
+        </div>
+    </div>
+    
+    
 
     
 </body>

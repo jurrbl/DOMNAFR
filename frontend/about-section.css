@@ -437,3 +437,81 @@
     width: 100%;
     height: 200px;
 }
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.review-testimonial-text {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contact-button {
+    margin-top: 20px;
+    width: 85%;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: white;
+    color: black;
+}
+.dot-navigation {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    z-index: 100;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s, opacity 0.3s, border 0.3s;
+}
+
+/* Puntini inattivi */
+.dot.light {
+    background-color: transparent;
+    border: 1px solid #8B0000; /* Rosa scuro per bordi visibili */
+    opacity: 0.5; /* Opacità bassa per i puntini inattivi */
+}
+
+.dot.dark {
+    background-color: palevioletred;
+    border: 1px solid #8B0000; /* Rosa scuro per bordi visibili */
+    opacity: 0.5; /* Opacità bassa per i puntini inattivi */
+}
+
+/* Puntino attivo */
+.dot.active {
+    opacity: 1; /* Opacità piena per il puntino attivo */
+}
+
+.dot.light.active {
+    background-color: white;
+    border: 1px solid #8B0000; /* Rosa scuro per il puntino attivo su sfondo chiaro */
+    opacity: 1;
+}
+
+.dot.dark.active {
+    background-color: palevioletred;
+    border: 1px solid #8B0000; /* Rosa scuro per il puntino attivo su sfondo scuro */
+    opacity: 1;
+}
