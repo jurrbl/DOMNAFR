@@ -4,34 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profilo</title>
+    <title>Profilo Utente</title>
   
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="1-011b8c61.ico" type="image/x-icon">
   
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="profile.css">
-    <script src="courses.js"></script>
-    <script src="toggle-animate-dropdown.js"></script>
-    <script src="about.js"></script>
+    <link rel="stylesheet" href="corsi.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Profilo Utente</h1>
-        <div class="profile-card">
-            <h2>Nome e Cognome</h2>
-            <p><strong>Nome:</strong> Mario Rossi</p>
-            <p><strong>Email:</strong> mario.rossi@example.com</p>
-            <p><strong>Data di Nascita:</strong> 1 Gennaio 1990</p>
-            <p><strong>Telefono:</strong> +39 012 345 6789</p>
+
+    <div class="parallax-2">
+        <p class="review-testimonial-text">PROFILO E CORSI</p>
+    </div>
+
+    <!-- Login Form Section -->
+    <div class="login-section">
+        <h1>Accedi al Tuo Profilo</h1>
+        <form class="login-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Inserisci la tua email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Inserisci la tua password" required>
+            
+            <button type="submit">Accedi</button>
+        </form>
+        <p>Non hai un account? <a href="register.html">Registrati qui</a></p>
+    </div>
+
+    <!-- Profile Information (Hidden initially, shown after login) -->
+    <div class="profile-page-container" style="display: none;">
+        <!-- Left Section for Profile Info -->
+        <div class="profile-sidebar">
+            <img src="profile-pic.jpg" alt="Foto Profilo" class="profile-pic">
+            <h2>Marcella Rossi</h2>
+            <p>Email: marcella@domna.net</p>
+            
+            <button class="edit-btn">Modifica Nome</button>
+            <button class="edit-btn">Modifica Cognome</button>
+            <button class="edit-btn">Cambia Password</button>
         </div>
         
-        <div class="subscription">
-            <h2>Abbonamento Attuale</h2>
-            <p><strong>Tipo di Abbonamento:</strong> Premium</p>
-            <p><strong>Data di Scadenza:</strong> 31 Dicembre 2024</p>
-            <p><strong>Prezzo:</strong> €9.99/mese</p>
+        <!-- Right Section for Course Info -->
+        <div class="profile-content">
+            <h1>Dettagli del Corso</h1>
+            <p><strong>Corso Selezionato:</strong> Corso di Yoga Avanzato</p>
+            <p><strong>Data di Rinnovo:</strong> 15 Novembre 2024</p>
+            <p><strong>Dettagli:</strong> Questo corso include accesso illimitato a lezioni settimanali e supporto personalizzato con l'istruttore.</p>
         </div>
     </div>
+
+    <script src="profile.js"></script>
 </body>
 </html>

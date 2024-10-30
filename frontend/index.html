@@ -1,198 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Coaching Overlap Style</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <script defer src="courses.js"></script>
-    <link rel="stylesheet" href="corsi.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilo Utente</title>
+  
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <link rel="stylesheet" href="firstpage.css" />
     <link rel="shortcut icon" href="1-011b8c61.ico" type="image/x-icon">
-  </head>
+  
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="corsi.css">
+</head>
+<body>
 
-  <body>
-    <hr />
-    <!-- Separator between sections -->
-
-    <section class="hero">
-      <nav class="navbar">
-        <div class="logo">
-          <img src="logo-removebg.png" id="logonav" alt="Domna Logo" />
-        </div>
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-section.html">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="profile.html">Profilo</a></li>
-        </ul>
-      </nav>
-<!-- Background images -->
-    <div class="hero-background" style="background-image: url('Dalle 2.webp');"></div>
-    <div class="hero-background" style="background-image: url('Dalle 3.webp');"></div>
-    <div class="hero-background" style="background-image: url('Dalle 4.webp');"></div>
-
-        
-
-      <!-- Main text content -->
-      <div class="hero-text">
-        <h1>DOMNA</h1>
-        <p id="animated-text">Allenamento     funzionale    femminile.</p>
-      </div>
-
-      <!-- Social icons -->
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-      </div>
-
-      <!-- Bouncing arrow -->
-      <div class="bounce-arrow">
-        <i class="fas fa-chevron-down" id="bounceArr" style="color: pink;"></i>
-      </div>
-    </section>
-
-    <!-- Parallax Section -->
-    <div class="parallax-section">
-      <p class="review-testimonial-text">Allenati Con DOMNA</p>
-    </div>
-    <hr />
-
-    <!-- First Section -->
-    <div class="container fade-in-section">
-      <div class="image-section-first"></div>
-      <div class="text-section first">
-        <h2><b>Metodo DOMNA</b></h2>
-        <hr />
-        <p class="paragraph-section-first">
-          Il metodo Domna è un percorso dedicato alle donne che desiderano riscoprire la propria armonia.
-        </p>
-        <p class="paragraph-section-first">
-          Domna è un percorso dedicato alle donne che supporta il cambiamento e la trasformazione attraverso livelli di allenamento.
-        </p>
-        <hr />
-        <div class="button">
-          <a href="corsi.html">Scopri di più</a>
-        </div>
-      </div>
-    </div>
-    <hr>
-
-    <hr>
-    <hr>
-
-    <!-- Second Section (Inverted Layout) -->
-    <div class="container fade-in-section">
-      <div class="image-section-second"></div>
-      <div class="text-section second">
-        <h2><b>Obiettivi DOMNA</b></h2>
-        <hr />
-        <p>
-          Domna propone un nuovo punto di vista per la trasformazione del corpo e la riscoperta della bellezza autentica.
-        </p>
-        <p>
-          Dimentica gli allenamenti e immagina una piacevole educazione al movimento.
-        </p>
-        <hr />
-        <div class="button">
-          <a href="corsi.html">Scopri di più</a>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-    <hr>
-
-    <!-- Third Section -->
-    <div class="container fade-in-section">
-      <div class="image-section-third"></div>
-      <div class="text-section first">
-        <h2><b>Sei indecisa? Scopri il percorso adatto a te!</b></h2>
-        <hr />
-        <p>
-          DOMNA ti guida in ogni passo. Rispondi al nostro quiz per trovare il percorso perfetto per le tue esigenze e obiettivi.
-        </p>
-        <hr />
-        <div class="button">
-          <a href="qna_quiz.html">Scopri il percorso ideale</a>
-        </div>
-      </div>
-    </div>
-
-    <hr />
-
-    <!-- Parallax Section -->
-    <div class="parallax-section">
-      <p class="review-testimonial-text">Recensioni Clienti DOMNA</p>
-    </div>
-
-    <div class="testimonials-wrapper fade-in-section">
-      
-      <div class="testimonial">
-        <img
-          id="testimonial-img"
-          src="https://randomuser.me/api/portraits/women/44.jpg"
-          alt="Profile Picture"
-        />
-        <h3 id="testimonial-name">Valentina</h3>
-        <p id="testimonial-role">Cliente Domna</p>
-        <p id="testimonial-text">
-          Ho iniziato il percorso ‘Domna’ e non potrei essere più soddisfatta!
-        </p>
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-      </div>
-
-    </div>
-
-    <hr />
-
-    <!-- Section Newsletter -->
-    <section class="contact-section fade-in-section">
-      <div class="container">
-        <h2 class="contact-title">Ricevi La Newsletter Del Sito</h2>
-        <p class="contact-subtitle">Resta sempre aggiornata!</p>
-
-        <form class="contact-form">
-          <div class="input-group">
-            <div class="name-group">
-              <input type="text" placeholder="Nome" required />
-              <input type="text" placeholder="Cognome" required />
-            </div>
-            <input type="email" placeholder="Email" required />
-            <input type="text" placeholder="Telefono" required />
-          </div>
-          <button type="submit" class="contact-button">Invia</button>
+    <!-- Login Form Section -->
+    <div class="login-section">
+        <h1>Accedi al Tuo Profilo</h1>
+        <form class="login-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Inserisci la tua email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Inserisci la tua password" required>
+            
+            <button type="submit">Accedi</button>
         </form>
+        <p>Non hai un account? <a href="register.html">Registrati qui</a></p>
+    </div>
 
-        <p class="footer-details">
-          DOMNA di Fruttero Marcella – P.IVA: 03933450045 – Via Monsignor Angelo Soracco 79 – 12045 Fossano (CN) – 
-          <a href="#">Privacy Policy</a>
-        </p>
-      </div>
-    </section>
-
-    <!-- FontAwesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </body>
+    <script src="profile.js"></script>
+</body>
 </html>
