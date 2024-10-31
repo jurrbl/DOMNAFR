@@ -1,7 +1,8 @@
     .hero {
         position: relative;
         height: 100vh;
-        background-image: url('IMG_7955.jpg');
+        background-image: url('output-onlinepngtools.png');
+        background-color: transparent;
         background-repeat: no-repeat;
         background-size: 130%; /* Riduce la dimensione per dare l'effetto di distanza */
         background-position: 20% 30%; /* Regola la posizione dell'immagine */
