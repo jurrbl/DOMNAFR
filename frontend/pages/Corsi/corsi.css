@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.08); /* Sfondo leggero a base rosa */
+    font: 100%/1.6 'Roboto', sans-serif;
+    padding: 3rem 1rem;
+}
+
+.pricing-table-wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.pricing-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+    grid-gap: 2em;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.pricing-table__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF8F0; /* Lavender Blush */
+    padding: 1.5em;
+    border-radius: 1.5em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 200ms cubic-bezier(.02, .01, .47, 1), transform 200ms cubic-bezier(.02, .01, .47, 1);
+}
+
+.pricing-table__item:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
+    transform: translate(0, -10px);
+}
+
+.pricing-table__img {
+    margin: 1.5em auto 2em;
+    width: 100%;
+    max-width: 80%;
+}
+
+.pricing-table__title {
+    margin: 0;
+    font-size: 1.5em;
+    color: #C71585; /* Rosa brillante per i titoli */
+    text-transform: capitalize;
+}
+
+.pricing-table__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.pricing-table__price {
+    color: #FF6EB4;
+    font-size: 2.2em;
+    margin: 0.5em auto;
+    font-weight: bold;
+}
+
+.pricing-table__label {
+    margin: 0;
+    color: hsl(216, 3%, 63%);
+    font-size: 1em;
+}
+
+.pricing-table__products {
+    margin: 1.2em 0;
+    padding: 0;
+    list-style-type: none;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricing-table__product {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+.pricing-table__product::before {
+    margin-right: 0.5em;
+}
+
+.pricing-table__product--included::before {
+    content: '⭕';
+    color: #FF69B4;
+}
+
+.pricing-table__product--excluded::before {
+    content: '❌';
+    color: black; /* Colore nero per le X */
+}
+
+.pricing-table__button {
+    background: #FF6EB4 ; /* Rosa scuro per il pulsante */
+    color: #fff;
+    margin-top: auto;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 1.87em;
+    text-align: center;
+    transition: background .2s ease-in-out;
+}
+
+.pricing-table__button:hover {
+    background-color: #AD1457; /* Rosa ancora più scuro al passaggio del mouse */
+}
