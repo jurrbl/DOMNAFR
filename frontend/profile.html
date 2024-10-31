@@ -17,13 +17,15 @@
 </head>
 <body>
 
-    <div class="parallax-2">
+    <!-- Parallax Section (Hidden initially) -->
+    <div class="parallax-2" style="display: none;">
         <p class="review-testimonial-text">PROFILO E CORSI</p>
     </div>
 
     <!-- Login Form Section -->
     <div class="login-section">
         <h1>Accedi al Tuo Profilo</h1>
+        <br>
         <form class="login-form">
             <label for="email">Email</label>
             <input type="email" id="email" placeholder="Inserisci la tua email" required>
@@ -43,10 +45,13 @@
             <img src="profile-pic.jpg" alt="Foto Profilo" class="profile-pic">
             <h2>Marcella Rossi</h2>
             <p>Email: marcella@domna.net</p>
+            <p>Id Utente: </p>
+            <p>Indirizzo: </p>
+            <p>Telefono: </p>
+            <p>Data Creazione Account: </p>
             
-            <button class="edit-btn">Modifica Nome</button>
-            <button class="edit-btn">Modifica Cognome</button>
-            <button class="edit-btn">Cambia Password</button>
+            <button class="edit-btn">Modifica Password</button>
+            <button class="edit-btn" onclick="logout()">Logout</button>
         </div>
         
         <!-- Right Section for Course Info -->
@@ -55,6 +60,7 @@
             <p><strong>Corso Selezionato:</strong> Corso di Yoga Avanzato</p>
             <p><strong>Data di Rinnovo:</strong> 15 Novembre 2024</p>
             <p><strong>Dettagli:</strong> Questo corso include accesso illimitato a lezioni settimanali e supporto personalizzato con l'istruttore.</p>
+            <p><strong>Video Corsi:     </strong></p>
         </div>
     </div>
 

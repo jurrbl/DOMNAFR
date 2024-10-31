@@ -1,7 +1,7 @@
 body {
   background-image: linear-gradient(to top, #fff5f8, #ffe6f0);
   height: 100%;
-  margin: 0;
+  margin: -18px; /* per fixare border */
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -9,6 +9,18 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+
+.parallax-section-1-marginFiller{
+  position: relative;
+  height: 300px; /* Altezza ridotta per migliorare l'aspetto */
+  background: url("paralla.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 50px 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .container {
