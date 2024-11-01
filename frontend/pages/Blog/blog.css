@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  scroll-behavior: smooth;
+  font-weight: bold;
+  scrollbar-width: thin;
+}
+body {
+  background-image: linear-gradient(to top, #fff5f8, #ffe6f0);
+  height: 100%;
+  margin: -18px; /* per fixare border */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  50% {
+    transform: translateY(-20px) translateX(-50%);
+  }
+}
+.parallax-section {
+  position: relative;
+  height: 300px; /* Altezza ridotta per migliorare l'aspetto */
+  background: url("../../assets/JPG_Images/paralla.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  margin: 50px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review-testimonial-text {
+  font-size: 35pt;
+  font-weight: bold;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.hero-text-about-section {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  text-align: center;
+  z-index: 10;
+  transform-style: preserve-3d;
+}
+
+.hero-text-about-section h1 {
+  font-size: 60px;
+  color: #f29aa0;
+  margin: 0;
+}
+
+.bounce-arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: pink;
+  animation: bounce 2s infinite;
+  z-index: 10;
+}
+
+.bounce-arrow i {
+  color: pink; /* O usa un codice colore specifico come #ff69b4 per un rosa più acceso */
+}
+
+#bounceArr {
+  position: absolute;
+  color: pink;
+  bottom: 80px;
+  cursor: pointer;
+}
+
+.review-testimonial-text {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.dot-navigation {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 100;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s, opacity 0.3s, border 0.3s;
+}
+
+/* Puntini inattivi */
+.dot.light {
+  background-color: transparent;
+  border: 1px solid #8b0000; /* Rosa scuro per bordi visibili */
+  opacity: 0.5; /* Opacità bassa per i puntini inattivi */
+}
+
+.dot.dark {
+  background-color: palevioletred;
+  border: 1px solid #8b0000; /* Rosa scuro per bordi visibili */
+  opacity: 0.5; /* Opacità bassa per i puntini inattivi */
+}
+
+/* Puntino attivo */
+.dot.active {
+  opacity: 1; /* Opacità piena per il puntino attivo */
+}
+
+.dot.light.active {
+  background-color: white;
+  border: 1px solid #8b0000; /* Rosa scuro per il puntino attivo su sfondo chiaro */
+  opacity: 1;
+}
+
+.dot.dark.active {
+  background-color: palevioletred;
+  border: 1px solid #8b0000; /* Rosa scuro per il puntino attivo su sfondo scuro */
+  opacity: 1;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("../../assets/PNG_Images/output-onlinepngtools.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 130%; /* Riduce la dimensione per dare l'effetto di distanza */
+  background-position: 20% 30%; /* Regola la posizione dell'immagine */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  width: 100%;
+
+  padding-top: 50px;
+  background-size: cover;
+}
+
+/* Overlay semi-trasparente per dare l'effetto di secondo piano */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* Colore semi-trasparente per un effetto "indietro" */
+  z-index: 1;
+}
+
+/* Navigation bar */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  z-index: 10;
+  height: 100px; /* Imposta un'altezza per allineare il logo con le scritte */
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+/* Logo settings */
+.navbar .logo img {
+  height: 100px; /* Imposta l'altezza del logo */
+  width: auto;
+
+  margin-left: 38px;
+  display: inline-block;
+  vertical-align: middle; /* Allinea verticalmente il logo */
+}
+
+/* Navigation menu */
+.navbar .nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 60px;
+  gap: 40px;
+}
+
+.navbar .nav-menu li {
+  margin: 0;
+}
+
+.navbar .nav-menu li a {
+  text-decoration: none;
+  color: #d75494;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  margin-right: 20px;
+  line-height: 100px; /* Allinea verticalmente con il logo */
+}
+
+.navbar .nav-menu li a:hover {
+  color: #f29aa0;
+}
+
+/* Bouncing arrow */
+.bounce-arrow {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: white;
+  animation: bounce 2s infinite;
+  z-index: 10;
+}
