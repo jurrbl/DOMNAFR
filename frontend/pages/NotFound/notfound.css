@@ -1,0 +1,45 @@
+/* 404 Page Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f7d3e5;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 6em;
+    color: #ff6b6b;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 10px 0 20px;
+}
+
+.back-home {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #f29aa0;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.back-home:hover {
+    background-color: #f18bbe;
+}
