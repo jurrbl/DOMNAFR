@@ -1,68 +1,77 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Seleziona tutte le sezioni che devono animarsi
-  const sections = document.querySelectorAll(".fade-in-section");
-
-  // Funzione per animare le sezioni quando diventano visibili
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target); // Una volta visibile, smette di osservarla
-        }
-      });
-    },
-    { threshold: 0.1 }
-  );
-
-  // Osserva ogni sezione
-  sections.forEach((section) => {
-    observer.observe(section);
+  // Initialize only the first 6 articles to be visible by default
+  document.querySelectorAll(".blog-container").forEach((container) => {
+    const posts = container.querySelectorAll(".blog-post");
+    posts.forEach((post, index) => {
+      if (index >= 6) {
+        post.classList.add("extra-post"); // Mark as initially hidden
+        post.style.display = "none"; // Hide posts beyond the sixth
+      }
+    });
   });
 });
-document.addEventListener("scroll", () => {
-  const sections = [
-    { element: document.querySelector(".hero"), darkBackground: false },
-    {
-      element: document.querySelector(
-        ".container-about-section.fade-in-section"
-      ),
-      darkBackground: true,
-    },
-    {
-      element: document.querySelector(".container-about-section.third"),
-      darkBackground: false,
-    },
-    { element: document.querySelector(".service-cards"), darkBackground: true },
-  ];
-  const dots = document.querySelectorAll(".dot");
 
-  let currentSectionIndex = -1;
+function toggleExtraPosts(button) {
+  const section = button.closest(".blog-category");
+  const extraPosts = section.querySelectorAll(".blog-post.extra-post");
+  let isExpanded = button.classList.contains("expanded");
+  const postsToShow = 6; // Number of posts to show per batch
 
-  sections.forEach((section, index) => {
-    const sectionTop = section.element.offsetTop;
-    const sectionHeight = section.element.clientHeight;
+  if (isExpanded) {
+    // Collapse all extra posts back to hidden with faster fade-out
+    extraPosts.forEach(post => fadeOut(post, 200)); // Faster fade-out
+    button.textContent = "Leggi tutti gli articoli";
+    button.classList.remove("expanded");
+  } else {
+    // Show the next batch of hidden posts with slower fade-in
+    let postsRevealed = 0;
+    extraPosts.forEach(post => {
+      if (post.style.display === "none" && postsRevealed < postsToShow) {
+        fadeIn(post, 500); // Slower fade-in
+        postsRevealed++;
+      }
+    });
 
-    // Controlla se la sezione è visibile
-    if (window.scrollY >= sectionTop - sectionHeight / 2) {
-      currentSectionIndex = index;
+    // Check if there are any more hidden posts
+    const hiddenPosts = Array.from(extraPosts).filter(post => post.style.display === "none");
+    if (hiddenPosts.length === 0) {
+      button.textContent = "Mostra meno articoli";
+      button.classList.add("expanded");
     }
-  });
+  }
+}
 
-  // Determina il colore dei puntini inattivi e attivo
-  const isCurrentSectionDark = sections[currentSectionIndex]?.darkBackground;
-
-  dots.forEach((dot, index) => {
-    dot.classList.remove("active", "light", "dark");
-
-    // Colore opposto per i puntini inattivi
-    dot.classList.add(isCurrentSectionDark ? "light" : "dark");
-
-    // Colore specifico per il puntino attivo
-    if (index === currentSectionIndex) {
-      dot.classList.add("active");
-      dot.classList.toggle("light", !isCurrentSectionDark);
-      dot.classList.toggle("dark", isCurrentSectionDark);
+// Fade-in function (similar to jQuery's fadeIn)
+function fadeIn(element, duration) {
+  element.style.opacity = 0;
+  element.style.display = "block";
+  
+  let start = null;
+  function animateFadeIn(timestamp) {
+    if (!start) start = timestamp;
+    const progress = timestamp - start;
+    const opacity = Math.min(progress / duration, 1);
+    element.style.opacity = opacity;
+    if (progress < duration) {
+      requestAnimationFrame(animateFadeIn);
     }
-  });
-});
+  }
+  requestAnimationFrame(animateFadeIn);
+}
+
+// Fade-out function (similar to jQuery's fadeOut)
+function fadeOut(element, duration) {
+  let start = null;
+  function animateFadeOut(timestamp) {
+    if (!start) start = timestamp;
+    const progress = timestamp - start;
+    const opacity = Math.max(1 - progress / duration, 0);
+    element.style.opacity = opacity;
+    if (progress < duration) {
+      requestAnimationFrame(animateFadeOut);
+    } else {
+      element.style.display = "none";
+    }
+  }
+  requestAnimationFrame(animateFadeOut);
+}

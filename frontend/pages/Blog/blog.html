@@ -1,71 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      rel="shortcut icon"
-      href="../../assets/Other/DomnaIcon.ico"
-      type="image/x-icon"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog DOMNA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="../../assets/Other/DomnaIcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../../assets/PNG_Images/logo-removebg.png" id="logonav" alt="Domna Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../Home/home.html">Home</a></li>
+                <li><a href="../About/about.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#" style="text-decoration: underline">Blog</a></li>
+                <li><a href="../Profile/profile.html">Profilo</a></li>
+            </ul>
+        </nav>
 
-    <link rel="stylesheet" href="blog.css" />
-    <script src="blog.js" defer></script>
-
-
-  </head>
-  <body>
-    <section
-      class="hero"
-      style="background-image: none; background-color: white"
-    >
-      <nav class="navbar">
-        <div class="logo">
-          <img src="../../assets/PNG_Images/logo-removebg.png" id="logonav" alt="Domna Logo" />
+        <div class="hero-text-about-section">
+            <h1 id="presentation-abt-h2">Blog DOMNA</h1>
         </div>
-        <ul class="nav-menu">
-          <li><a href="../Home/home.html">Home</a></li>
-          <li>
-            <a href="../About/about.html" style="text-decoration: underline"
-              >About</a
-            >
-          </li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="../Profile/profile.html">Profilo</a></li>
-        </ul>
-      </nav>
-      <div class="dot-navigation">
-        <span class="dot" data-section="hero"></span>
-        <span class="dot" data-section="about"></span>
-        <span class="dot" data-section="mindset"></span>
-        <span class="dot" data-section="specialty"></span>
-      </div>
-
-      <div class="hero-text-about-section">
-        <h1 id="presentation-abt-h2">Blog DOMNA</h1>
-      </div>
-      <div class="bounce-arrow">
-        <i class="fas fa-chevron-down" id="bounceArr" style="color: pink"></i>
-      </div>
     </section>
 
-    <!-- Parallax Section -->
-    <div class="parallax-section">
-      <p class="review-testimonial-text">BLOG DOMNA</p>
-    </div>
-  </body>
+    <!-- Allenamento Section -->
+    <section class="blog-category">
+      <h2 class="category-title">Allenamento</h2>
+      <p class="category-description">In questa sezione puoi trovare articoli per migliorare la tua forma fisica con esercizi mirati.</p>
+      <div class="blog-container">
+          <div class="blog-post">
+              <img src="../../assets/Other/1.webp" alt="Allenamento Immagine 1">
+              <div class="blog-content">
+                  <h3>Allenamento Funzionale: Benefici e Consigli</h3>
+                  <p>Scopri come l'allenamento funzionale può aiutarti a migliorare la tua resistenza e forza...</p>
+                  <a href="article1.html" class="read-more">Leggi di più</a>
+              </div>
+          </div>
+          <div class="blog-post">
+              <img src="../../assets/Other/2.jpg" alt="Allenamento Immagine 2">
+              <div class="blog-content">
+                  <h3>HIIT: L'Allenamento Intenso per Bruciare Grassi</h3>
+                  <p>Il metodo HIIT è ideale per chi ha poco tempo ma vuole ottenere risultati rapidi...</p>
+                  <a href="article2.html" class="read-more">Leggi di più</a>
+              </div>
+          </div>
+          <div class="blog-post">
+              <img src="../../assets/Other/4.jpg" alt="Allenamento Immagine 3">
+              <div class="blog-content">
+                  <h3>Stretching: Perché è Importante Dopo l'Allenamento</h3>
+                  <p>Il ruolo del stretching per il recupero muscolare e la prevenzione degli infortuni...</p>
+                  <a href="article3.html" class="read-more">Leggi di più</a>
+              </div>
+          </div>
+          <div class="blog-post">
+            <img src="../../assets/Other/5.jpg" alt="Allenamento Immagine 1">
+            <div class="blog-content">
+                <h3>Allenamento Funzionale: Benefici e Consigli</h3>
+                <p>Scopri come l'allenamento funzionale può aiutarti a migliorare la tua resistenza e forza...</p>
+                <a href="article1.html" class="read-more">Leggi di più</a>
+            </div>
+        </div>
+        <div class="blog-post">
+            <img src="../../assets/Other/1.webp" alt="Allenamento Immagine 2">
+            <div class="blog-content">
+                <h3>HIIT: L'Allenamento Intenso per Bruciare Grassi</h3>
+                <p>Il metodo HIIT è ideale per chi ha poco tempo ma vuole ottenere risultati rapidi...</p>
+                <a href="article2.html" class="read-more">Leggi di più</a>
+            </div>
+        </div>
+        <div class="blog-post">
+            <img src="../../assets/Other/7.jpg" alt="Allenamento Immagine 3">
+            <div class="blog-content">
+                <h3>Stretching: Perché è Importante Dopo l'Allenamento</h3>
+                <p>Il ruolo del stretching per il recupero muscolare e la prevenzione degli infortuni...</p>
+                <a href="article3.html" class="read-more">Leggi di più</a>
+            </div>
+        </div>
+        <div class="blog-post">
+            <img src="../../assets/Other/5.jpg" alt="Allenamento Immagine 3">
+            <div class="blog-content">
+                <h3>Stretching: Perché è Importante Dopo l'Allenamento</h3>
+                <p>Il ruolo del stretching per il recupero muscolare e la prevenzione degli infortuni...</p>
+                <a href="article3.html" class="read-more">Leggi di più</a>
+            </div>
+          </div>
+      </div>
+      <button class="category-link" onclick="toggleExtraPosts(this)">Leggi tutti gli articoli</button>
+
+  </section>
+
+  <!-- Alimentazione Section -->
+  <section class="blog-category">
+      <h2 class="category-title">Alimentazione</h2>
+      <p class="category-description">Consigli nutrizionali per supportare il tuo stile di vita attivo e bilanciato.</p>
+      <div class="blog-container">
+          <div class="blog-post">
+              <img src="../../assets/Other/1.webp" alt="Alimentazione Immagine 1">
+              <div class="blog-content">
+                  <h3>Alimentazione Consapevole: Guida Completa</h3>
+                  <p>Come sviluppare un rapporto positivo e consapevole con il cibo...</p>
+                  <a href="article4.html" class="read-more">Leggi di più</a>
+              </div>
+          </div>
+          <div class="blog-post">
+              <img src="../../assets/Other/2.jpg" alt="Alimentazione Immagine 2">
+              <div class="blog-content">
+                  <h3>I Migliori Alimenti per la Crescita Muscolare</h3>
+                  <p>Scopri gli alimenti ricchi di proteine per potenziare la tua muscolatura...</p>
+                  <a href="article5.html" class="read-more">Leggi di più</a>
+              </div>
+          </div>
+          <div class="blog-post">
+              <img src="../../assets/Other/4.jpg" alt="Alimentazione Immagine 3">
+              <div class="blog-content">
+                  <h3>Dieta Mediterranea: Benefici e Ricette</h3>
+                  <p>Scopri i vantaggi della dieta mediterranea per una vita sana e longeva...</p>
+                  <a href="article6.html" class="read-more">Leggi di più</a>
+              </div>
+          </div>
+          <div class="blog-post">
+            <img src="../../assets/Other/3.jpg" alt="Alimentazione Immagine 1">
+            <div class="blog-content">
+                <h3>Alimentazione Consapevole: Guida Completa</h3>
+                <p>Come sviluppare un rapporto positivo e consapevole con il cibo...</p>
+                <a href="article4.html" class="read-more">Leggi di più</a>
+            </div>
+        </div>
+        <div class="blog-post">
+            <img src="../../assets/Other/5.jpg" alt="Alimentazione Immagine 2">
+            <div class="blog-content">
+                <h3>I Migliori Alimenti per la Crescita Muscolare</h3>
+                <p>Scopri gli alimenti ricchi di proteine per potenziare la tua muscolatura...</p>
+                <a href="article5.html" class="read-more">Leggi di più</a>
+            </div>
+        </div>
+        <div class="blog-post">
+            <img src="../../assets/Other/7.jpg" alt="Alimentazione Immagine 3">
+            <div class="blog-content">
+                <h3>Dieta Mediterranea: Benefici e Ricette</h3>
+                <p>Scopri i vantaggi della dieta mediterranea per una vita sana e longeva...</p>
+                <a href="article6.html" class="read-more">Leggi di più</a>
+            </div>
+        </div>
+      </div>
+      <button class="category-link" onclick="toggleExtraPosts(this)">Leggi tutti gli articoli</button>
+
+  </section>
+
+  <!-- Nutraceutica Section -->
+  <section class="blog-category">
+      <h2 class="category-title">Nutraceutica</h2>
+      <p class="category-description">Articoli su integratori naturali e cibi funzionali per il benessere.</p>
+      <div class="blog-container">
+          <div class="blog-post">
+              <img src="../../assets/Other/2.jpg" alt="Nutraceutica Immagine 1">
+              <div class="blog-content">
+                  <h3>Omega-3 e Salute Cardiovascolare</h3>
+                  <p>Scopri i benefici degli Omega-3 per il cuore e dove trovarli...</p>
+                  <a href="article7.html" class="read-more">Leggi di più</a>
+              </div>
+          </div>
+          <div class="blog-post">
+              <img src="../../assets/Other/3.jpg" alt="Nutraceutica Immagine 2">
+              <div class="blog-content">
+                  <h3>Probiotici: Come Migliorano il Tuo Intestino</h3>
+                  <p>Un'introduzione ai probiotici e come aiutano la digestione...</p>
+                  <a href="article8.html" class="read-more">Leggi di più</a>
+              </div>
+          </div>
+          <div class="blog-post">
+              <img src="../../assets/Other/2.jpg" alt="Nutraceutica Immagine 3">
+              <div class="blog-content">
+                  <h3>Antiossidanti: Cosa Sono e Dove Trovarli</h3>
+                  <p>Scopri come gli antiossidanti proteggono le cellule dallo stress ossidativo...</p>
+                  <a href="article9.html" class="read-more">Leggi di più</a>
+              </div>
+          </div>
+          <div class="blog-post">
+            <img src="../../assets/Other/7.jpg" alt="Nutraceutica Immagine 1">
+            <div class="blog-content">
+                <h3>Omega-3 e Salute Cardiovascolare</h3>
+                <p>Scopri i benefici degli Omega-3 per il cuore e dove trovarli...</p>
+                <a href="article7.html" class="read-more">Leggi di più</a>
+            </div>
+        </div>
+        <div class="blog-post">
+            <img src="../../assets/Other/4.jpg" alt="Nutraceutica Immagine 2">
+            <div class="blog-content">
+                <h3>Probiotici: Come Migliorano il Tuo Intestino</h3>
+                <p>Un'introduzione ai probiotici e come aiutano la digestione...</p>
+                <a href="article8.html" class="read-more">Leggi di più</a>
+            </div>
+        </div>
+        <div class="blog-post">
+            <img src="../../assets/Other/5.jpg" alt="Nutraceutica Immagine 3">
+            <div class="blog-content">
+                <h3>Antiossidanti: Cosa Sono e Dove Trovarli</h3>
+                <p>Scopri come gli antiossidanti proteggono le cellule dallo stress ossidativo...</p>
+                <a href="article9.html" class="read-more">Leggi di più</a>
+            </div>
+        </div>
+      </div>
+      <button class="category-link" onclick="toggleExtraPosts(this)">Leggi tutti gli articoli</button>
+    </section>
+
+  <!-- Gestione Emotiva Section -->
+  <section class="blog-category">
+      <h2 class="category-title">Gestione Emotiva</h2>
+      <p class="category-description">Tecniche e articoli per migliorare la tua consapevolezza emotiva e il benessere mentale.</p>
+      <div class="blog-container">
+          <div class="blog-post">
+              <img src="../../assets/Other/1.webp" alt="Gestione Emotiva Immagine 1">
+              <div class="blog-content">
+                  <h3>Mindfulness per la Vita Quotidiana</h3>
+                  <p>Come praticare la mindfulness per ridurre lo stress e aumentare la consapevolezza...</p>
+                  <a href="article10.html" class="read-more">Leggi di più</a>
+              </div>
+          </div>
+          <div class="blog-post">
+              <img src="../../assets/Other/5.jpg" alt="Gestione Emotiva Immagine 2">
+              <div class="blog-content">
+                  <h3>Gestione dello Stress: Tecniche Efficaci</h3>
+                  <p>Strategie per gestire lo stress nella vita quotidiana e migliorare la tua salute mentale...</p>
+                  <a href="article11.html" class="read-more">Leggi di più</a>
+              </div>
+          </div>
+          <div class="blog-post">
+              <img src="../../assets/Other/1.webp" alt="Gestione Emotiva Immagine 3">
+              <div class="blog-content">
+                  <h3>L'Importanza del Riposo per il Benessere Emotivo</h3>
+                  <p>Scopri perché il riposo è fondamentale per la salute mentale e il benessere emotivo...</p>
+                  <a href="article12.html" class="read-more">Leggi di più</a>
+              </div>
+          </div>
+          <div class="blog-post">
+            <img src="../../assets/Other/2.jpg" alt="Gestione Emotiva Immagine 1">
+            <div class="blog-content">
+                <h3>Mindfulness per la Vita Quotidiana</h3>
+                <p>Come praticare la mindfulness per ridurre lo stress e aumentare la consapevolezza...</p>
+                <a href="article10.html" class="read-more">Leggi di più</a>
+            </div>
+        </div>
+        <div class="blog-post">
+            <img src="../../assets/Other/5.jpg" alt="Gestione Emotiva Immagine 2">
+            <div class="blog-content">
+                <h3>Gestione dello Stress: Tecniche Efficaci</h3>
+                <p>Strategie per gestire lo stress nella vita quotidiana e migliorare la tua salute mentale...</p>
+                <a href="article11.html" class="read-more">Leggi di più</a>
+            </div>
+        </div>
+        <div class="blog-post">
+            <img src="../../assets/Other/1.webp" alt="Gestione Emotiva Immagine 3">
+            <div class="blog-content">
+                <h3>L'Importanza del Riposo per il Benessere Emotivo</h3>
+                <p>Scopri perché il riposo è fondamentale per la salute mentale e il benessere emotivo...</p>
+                <a href="article12.html" class="read-more">Leggi di più</a>
+            </div>
+        </div>
+        <div class="blog-post">
+          <img src="../../assets/Other/1.webp" alt="Gestione Emotiva Immagine 3">
+          <div class="blog-content">
+              <h3>L'Importanza del Riposo per il Benessere Emotivo</h3>
+              <p>Scopri perché il riposo è fondamentale per la salute mentale e il benessere emotivo...</p>
+              <a href="article12.html" class="read-more">Leggi di più</a>
+          </div>
+      </div>
+       <div class="blog-post">
+            <img src="../../assets/Other/1.webp" alt="Gestione Emotiva Immagine 3">
+            <div class="blog-content">
+                <h3>L'Importanza del Riposo per il Benessere Emotivo</h3>
+                <p>Scopri perché il riposo è fondamentale per la salute mentale e il benessere emotivo...</p>
+                <a href="article12.html" class="read-more">Leggi di più</a>
+            </div>
+        </div>
+      </div>
+      <button class="category-link" onclick="toggleExtraPosts(this)">Leggi tutti gli articoli</button>
+    </section>
+
+  <script src="blog.js"></script>
+</body>
 </html>

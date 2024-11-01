@@ -1,26 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Seleziona tutte le sezioni che devono animarsi
+  // Select sections to animate when they become visible
   const sections = document.querySelectorAll(".fade-in-section");
 
-  // Funzione per animare le sezioni quando diventano visibili
+  // Function to animate sections when they become visible
   const observer = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target); // Una volta visibile, smette di osservarla
+          observer.unobserve(entry.target); // Stop observing once visible
         }
       });
     },
     { threshold: 0.1 }
   );
 
-  // Osserva ogni sezione
+  // Observe each section
   sections.forEach((section) => {
     observer.observe(section);
   });
 
-  // Testimonianze e animazione fade in/out automatico
+  // Testimonials and automatic fade in/out animation
   const testimonials = [
     {
       img: "https://randomuser.me/api/portraits/women/44.jpg",
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let currentIndex = 0;
 
-  // Funzione per aggiornare la testimonianza con effetto fade in/out automatico
+  // Function to update the testimonial with fade in/out effect
   function updateTestimonial() {
     const testimonialContainer = document.querySelector(".testimonial");
 
@@ -66,38 +66,46 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(updateTestimonial, 3000);
   updateTestimonial();
 
-  // Animazione lettera per lettera
   function letterByLetterAnimation(element) {
     const letters = element.textContent.split("");
     element.innerHTML = "";
+
     letters.forEach(function (letter) {
-      const span = document.createElement("span");
-      span.textContent = letter;
-      span.style.opacity = "0";
-      span.style.marginRight = "3px";
-      span.style.transform = "translateX(-100%)";
-      element.appendChild(span);
+        const span = document.createElement("span");
+        span.textContent = letter;
+        span.style.opacity = "0";
+        span.style.transform = "translateX(-100%)";
+
+        // If the character is a space, apply extra width
+        if (letter === " ") {
+            span.style.marginRight = "0.2em"; // Adjust this value as needed
+        }
+
+        element.appendChild(span);
     });
 
     const spans = element.querySelectorAll("span");
     let index = 0;
     function animateLetters() {
-      if (index < spans.length) {
-        spans[index].style.opacity = "1";
-        spans[index].style.transform = "translateX(0)";
-        setTimeout(() => {
-          index++;
-          animateLetters();
-        }, 35);
-      }
+        if (index < spans.length) {
+            spans[index].style.opacity = "1";
+            spans[index].style.color = "white";
+            spans[index].style.transform = "translateX(0)";
+            setTimeout(() => {
+                index++;
+                animateLetters();
+            }, 35);
+        }
     }
     animateLetters();
-  }
+}
 
-  const animatedText = document.getElementById("animated-text");
+const animatedText = document.getElementById("animated-text");
+letterByLetterAnimation(animatedText);
+
   letterByLetterAnimation(animatedText);
 
-  // JavaScript Function to Create Fade In and Fade Out Effect for Background Images
+  // JavaScript function to create fade in and fade out effect for background images
   let backgroundIndex = 0;
 
   function fadeInOutBackground() {

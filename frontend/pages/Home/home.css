@@ -10,11 +10,10 @@ body {
 
 .parallax-section-1-marginFiller {
   position: relative;
-  height: 300px; /* Altezza ridotta per migliorare l'aspetto */
-  background: url("../../assets/JPG_Images/paralla.jpg") no-repeat center center
-    fixed;
+  height: 400px;
+  background: url("../../assets/JPG_Images/paralla.jpg") no-repeat center center fixed;
   background-size: cover;
-  margin: 50px 50px;
+  margin: 80px 50px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -27,32 +26,26 @@ body {
   padding: 20px 0;
 }
 
-
-
-.image-section-first {
-  width: 600px;
-  height: 400px;
-  background: url("../../assets/PNG_Images/Dalle2.png") no-repeat center center;
-  background-size: cover;
-  filter: blur(0.5px);
-  position: absolute;
-}
-.image-section-second {
-  width: 600px;
-  height: 400px;
-  background: url("../../assets/PNG_Images/Dalle3.png") no-repeat center center;
-  background-size: cover;
-  filter: blur(0.5px);
-  position: absolute;
-}
-
+.image-section-first,
+.image-section-second,
 .image-section-third {
   width: 600px;
   height: 400px;
-  background: url("../../assets/PNG_Images/Dalle5.png") no-repeat center center;
   background-size: cover;
   filter: blur(0.5px);
   position: absolute;
+}
+
+.image-section-first {
+  background: url("../../assets/PNG_Images/Dalle2.png") no-repeat center center;
+}
+
+.image-section-second {
+  background: url("../../assets/PNG_Images/Dalle3.png") no-repeat center center;
+}
+
+.image-section-third {
+  background: url("../../assets/PNG_Images/Dalle5.png") no-repeat center center;
 }
 
 .text-section {
@@ -124,9 +117,8 @@ body {
 
 .parallax-section {
   position: relative;
-  height: 300px; /* Altezza ridotta per migliorare l'aspetto */
-  background: url("../../assets/JPG_Images/paralla.jpg") no-repeat center center
-    fixed;
+  height: 300px;
+  background: url("../../assets/JPG_Images/paralla.jpg") no-repeat center center fixed;
   background-size: cover;
   margin: 50px 0;
   width: 100%;
@@ -257,7 +249,7 @@ body {
 .social-icons {
   justify-content: center;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 240px;
 }
 
 .social-icons a {
@@ -269,7 +261,7 @@ body {
 }
 
 .bounce-arrow i {
-  color: pink; /* O usa un codice colore specifico come #ff69b4 per un rosa più acceso */
+  color: pink;
 }
 
 #bounceArr {
@@ -278,13 +270,14 @@ body {
   bottom: 80px;
   cursor: pointer;
 }
+
 .hero {
   position: relative;
   height: 100vh;
   background-image: url("../../assets/PNG_Images/output-onlinepngtools.png");
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: 20% 30%; /* Regola la posizione dell'immagine */
+  background-position: 20% 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,7 +287,6 @@ body {
   background-size: cover;
 }
 
-/* Overlay semi-trasparente per dare l'effetto di secondo piano */
 .hero::before {
   content: "";
   position: absolute;
@@ -302,22 +294,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.4
-  ); /* Colore semi-trasparente per un effetto "indietro" */
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
-/* Stile del testo per assicurarsi che sia sopra l'overlay */
 .hero-content {
   position: relative;
   z-index: 2;
 }
 
-/* Navigation bar */
 .navbar {
   position: absolute;
   top: 0;
@@ -327,33 +312,30 @@ body {
   align-items: center;
   padding: 20px 50px;
   z-index: 10;
-  height: 100px; /* Imposta un'altezza per allineare il logo con le scritte */
+  height: 100px;
   font-weight: 400;
   font-size: 10px;
   text-transform: uppercase;
 }
 
-/* Logo settings */
 .navbar .logo img {
-  height: 100px; /* Imposta l'altezza del logo */
+  height: 100px;
   width: auto;
-
-  margin-left: 38px;
+  margin-top: 50px;
+  margin-left: 50px;
   display: inline-block;
-  vertical-align: middle; /* Allinea verticalmente il logo */
+  vertical-align: middle;
 }
 
-/* Navigation menu */
 .navbar .nav-menu {
   list-style: none;
   display: flex;
   justify-content: flex-end;
   margin-right: 60px;
+  margin-top: 50px;
+  font-family: Josefin Sans;
   gap: 40px;
-}
-
-.navbar .nav-menu li {
-  margin: 0;
+  color: #f29aa0;
 }
 
 .navbar .nav-menu li a {
@@ -362,21 +344,20 @@ body {
   font-size: 15px;
   transition: color 0.3s ease;
   margin-right: 20px;
-  line-height: 100px; /* Allinea verticalmente con il logo */
+  line-height: 100px;
 }
 
 .navbar .nav-menu li a:hover {
   color: #f29aa0;
 }
 
-/* Social icons aligned to the far right */
 .social-icons {
   position: absolute;
   right: 60px;
-  bottom: 48%; /* Allinea con la scritta Domna */
+  bottom: 45%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
   z-index: 10;
 }
 
@@ -391,11 +372,10 @@ body {
   color: #f29aa0;
 }
 
-/* Left text */
 .hero-text {
   position: absolute;
   left: 50px;
-  bottom: 50%; /* Allinea con le icone social */
+  bottom: 50%;
   text-align: left;
   z-index: 10;
 }
@@ -410,21 +390,19 @@ body {
   font-size: 18px;
   margin-top: 5px;
 }
-/*  */
-/* Bouncing arrow */
+
 .bounce-arrow {
   position: absolute;
-  bottom: 5px;
+  bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 30px;
-    animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
   z-index: 10;
 }
 
 @keyframes bounce {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0) translateX(-50%);
   }
   50% {
@@ -435,19 +413,36 @@ body {
 .hero-text span {
   display: inline-block;
   transition: all 0.3s ease;
+  
 }
 
 .hero-text span.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
 #animated-text {
-  color: black;
+  color: white;
 }
+
+#animated-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-100%);
+  margin-right: 3px;
+  margin-left: 2px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: .9rem;
+}
+
+
+
 .text-container span {
   display: inline-block;
-  margin-right: 2px; /* Spazio tra le lettere */
+  margin-right: 1px;
 }
+
 .fade-in-section {
   opacity: 0;
   transform: translateY(20px);

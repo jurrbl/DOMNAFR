@@ -27,9 +27,9 @@
 }
 .hero-text h1,
 .hero-text-about-section h1 {
-  font-size: 60px;
+  font-size: 50px;
   color: #f29aa0;
-  margin: 0;
+  margin-top: 150%;
 }
 .bounce-arrow i {
   color: pink;
@@ -37,7 +37,7 @@
 .container-about-section {
   position: relative;
   width: 900px;
-  height: 500px;
+  height: 600px;
   margin-bottom: 250px;
 }
 .image-section-first-about {
@@ -53,35 +53,34 @@
   top: 100px;
   left: 450px;
   width: 403px;
-  height: 702px;
+  height: 700px;
   background-color: #f3c7dc;
-  padding: 30px;
+  padding: 20px 30px; /* Ridotto padding laterale per rendere il testo più compatto */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 2;
-  text-align: center;
+  text-align: left; /* Allineato a sinistra per uno stile simile all'esempio */
 }
 #story-texth2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #fff;
   font-weight: 700;
   letter-spacing: 0.1em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
   text-align: left;
 }
 .paragraph-section-second-presentation {
   font-size: 1.1rem;
-  word-wrap: normal;
-  text-align: left;
-  letter-spacing: 0.1em;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
+
 .paragraph-section-second {
   font-size: 0.9rem;
-  line-height: 1.8;
-  word-wrap: break-word;
-  text-align: left;
-  letter-spacing: 0.05em;
-  margin: 0;
-  font-family: "Josefin Sans", sans-serif;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 15px; /* Margine ridotto per dare un aspetto più compatto */
 }
 .separator-hr,
 .separator-hr-second {
@@ -147,6 +146,11 @@
   width: 100%;
   height: 400px;
 }
+strong{
+  text-decoration: underline;
+  color: #8b1d1d;
+}
+
 .container-about-section.third {
   position: relative;
   width: 900px;
@@ -156,36 +160,41 @@
 .image-section-third-about {
   width: 672px;
   height: 1008px;
-  background: url("../../assets/PNG_Images/Dalle5.png") no-repeat center center;
+  background: url("../../assets/JPG_Images/IMG_7955.jpg") no-repeat center center;
   background-size: cover;
-  filter: blur(0.5px);
   position: absolute;
 }
+
 .text-section-about-html.third {
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 450px;
   width: 403px;
-  height: 702px;
+  height: 600px;
   background-color: #f3c7dc;
-  padding: 30px;
+  padding: 20px 30px; /* Ridotto padding per rendere il testo più vicino ai bordi */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 2;
-  text-align: center;
+  text-align: left;
 }
 #specialty-texth2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #fff;
   font-weight: 700;
   letter-spacing: 0.1em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
   text-align: left;
 }
+
 .paragraph-section-third-presentation {
   font-size: 1.1rem;
-  word-wrap: normal;
-  text-align: left;
-  letter-spacing: 0.1em;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: bold;
+  padding-left: 0; /* Rimuove il padding sinistro */
+  padding-right: 0; /* Rimuove il padding destro */
 }
 .accordion,
 .paragraph-section-third,
@@ -194,12 +203,13 @@
 }
 .paragraph-section-third {
   font-size: 0.9rem;
-  line-height: 1.8;
-  word-wrap: break-word;
-  text-align: left;
-  letter-spacing: 0.05em;
-  margin: 0;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  padding-left: 0; /* Rimuove il padding sinistro */
+  padding-right: 0; /* Rimuove il padding destro */
 }
+
 .accordion {
   width: 100%;
   max-width: 600px;
@@ -284,14 +294,16 @@
 .card-overlay {
   position: absolute;
   bottom: 10px;
-  left: 0;
-  width: 100%;
+  right: 0; /* Aggiunto px per definire l'unità */
+  left: 0; /* Aggiunto px per definire l'unità */
+  width: calc(100% + -20px); /* Compensa il margine negativo a destra e sinistra */
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .card-title {
   color: #8b1d1d;
   font-weight: 700;
@@ -307,7 +319,7 @@
 .learn-more {
   margin-top: auto;
   padding: 10px 20px;
-  background-color: #ccc;
+  background-color: #e892bb;
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
@@ -316,7 +328,7 @@
   transition: background-color 0.3s ease;
 }
 .learn-more:hover {
-  background-color: #8b1d1d;
+  background-color: #d75494;
 }
 .separator-hr-fromhero {
   width: 100%;
@@ -345,12 +357,16 @@
   gap: 10px;
   z-index: 100;
 }
+
+
 .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  background-color: #db7093;
   transition: background-color 0.3s, opacity 0.3s, border 0.3s;
 }
+
 .dot.dark,
 .dot.light {
   background-color: transparent;
@@ -380,17 +396,19 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url("../../assets/PNG_Images/output-onlinepngtools.png");
+  background-image: url("../../assets/JPG_Images/IMG_7942.jpg");
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: 20% 30%;
+background-position-y: 45%;
+  background-size: cover;
+  display: flex;
   justify-content: center;
-  color: #fff;
+  align-items: center;
   overflow: hidden;
   width: 100%;
   padding-top: 50px;
-  background-size: cover;
 }
+
 body {
   overflow-x: hidden;
   background-image: linear-gradient(to top, #fff5f8, #ffe6f0);
@@ -402,9 +420,12 @@ body {
 }
 .hero::before {
   content: "";
+  position: absolute;
+  top: 0;
   left: 0;
+  width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3); /* Colore nero con opacità */
   z-index: 1;
 }
 .hero-content {
@@ -431,7 +452,8 @@ body {
 .navbar .logo img {
   height: 100px;
   width: auto;
-  margin-left: 38px;
+  margin-top: 50px;
+  margin-left: 50px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -440,7 +462,10 @@ body {
   display: flex;
   justify-content: flex-end;
   margin-right: 60px;
+  margin-top: 50px;
+  font-family: Josefin Sans;
   gap: 40px;
+  color: #f29aa0;
 }
 .navbar .nav-menu li {
   margin: 0;
@@ -472,9 +497,11 @@ body {
   z-index: 10;
 }
 .hero-text {
-  left: 50px;
-  bottom: 50%;
-  text-align: left;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
 }
 .hero-text p {
   font-size: 18px;
@@ -482,12 +509,14 @@ body {
   margin-top: 5px;
 }
 .bounce-arrow {
-  bottom: 5px;
+  position: absolute;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 30px;
-  color: #fff;
+  color: white;
   animation: bounce 2s infinite;
+  z-index: 10;
 }
 .fade-in-section,
 .hero-text span {
@@ -730,9 +759,16 @@ body {
 }
 
 #bounceArr {
-    position: absolute;
-    color: pink;
-    bottom: 80px;
-    cursor: pointer;
+  position: absolute;
+  color: pink;
+  bottom: 10px;
+  cursor: pointer;
+}
+  #a-learn-more{
+    text-decoration: none;
+    color: white;
   }
-  
+
+  #a-learn-more::after{
+    color: white;
+  }
