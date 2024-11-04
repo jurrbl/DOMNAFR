@@ -100,8 +100,8 @@ document.addEventListener("DOMContentLoaded", function () {
     animateLetters();
 }
 
-const animatedText = document.getElementById("animated-text");
-letterByLetterAnimation(animatedText);
+  const animatedText = document.getElementById("animated-text");
+  letterByLetterAnimation(animatedText);
 
   letterByLetterAnimation(animatedText);
 
