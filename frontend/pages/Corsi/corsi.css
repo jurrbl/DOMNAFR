@@ -123,3 +123,202 @@ body {
 .pricing-table__button:hover {
     background-color: #AD1457; /* Rosa ancora più scuro al passaggio del mouse */
 }
+.social-icons {
+    justify-content: center;
+    gap: 15px;
+    margin-top: 240px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #d75494;
+  }
+  
+  .bounce-arrow i {
+    color: pink;
+  }
+  
+  #bounceArr {
+    position: absolute;
+    color: pink;
+    bottom: 80px;
+    cursor: pointer;
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh;
+    background-image: url("../../assets/PNG_Images/output-onlinepngtools.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 50px;
+    background-size: cover;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 10;
+    height: 100px;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  
+  .navbar .logo img {
+    height: 100px;
+    width: auto;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .navbar .nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+    margin-top: 50px;
+    font-family: Josefin Sans;
+    gap: 40px;
+    color: #f29aa0;
+  }
+  
+  .navbar .nav-menu li a {
+    text-decoration: none;
+    color: #d75494;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    margin-right: 20px;
+    line-height: 100px;
+  }
+  
+  .navbar .nav-menu li a:hover {
+    color: #f29aa0;
+  }
+  
+  .social-icons {
+    position: absolute;
+    right: 60px;
+    bottom: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    z-index: 10;
+  }
+  
+  .social-icons a {
+    color: #d75494;
+    font-size: 30px;
+    margin: 15px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #f29aa0;
+  }
+  
+  .hero-text {
+    position: absolute;
+    left: 50px;
+    bottom: 50%;
+    text-align: left;
+    z-index: 10;
+  }
+  
+  .hero-text h1 {
+    font-size: 60px;
+    color: #f29aa0;
+    margin: 0;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  
+  .bounce-arrow {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    animation: bounce 2s infinite;
+    z-index: 10;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0) translateX(-50%);
+    }
+    50% {
+      transform: translateY(-20px) translateX(-50%);
+    }
+  }
+  
+  .hero-text span {
+    display: inline-block;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .hero-text span.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  #animated-text {
+    color: white;
+  }
+  
+  #animated-text span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-100%);
+    margin-right: 3px;
+    margin-left: 2px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: .9rem;
+  }
+  
+  
+  
+  .text-container span {
+    display: inline-block;
+    margin-right: 1px;
+  }
+  
+  
+  

@@ -3,6 +3,13 @@
  - Shopping cart
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Hero - No Parallax
+Parallax  Section - Corsi (DOMNA)
+    - Courses
+Parallax Section - Corsi (DOMNA + Live)
+    - Courses
+Parallax Section - Group Training
+    - Group Training
 
 
 ------------------------------------------------------

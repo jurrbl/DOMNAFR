@@ -10,10 +10,10 @@ body {
 
 .parallax-section-1-marginFiller {
   position: relative;
-  height: 400px;
+  height: 450px;
   background: url("../../assets/JPG_Images/paralla.jpg") no-repeat center center fixed;
   background-size: cover;
-  margin: 80px 50px;
+  margin: 0px 50px;
   width: 100%;
   display: flex;
   justify-content: center;
