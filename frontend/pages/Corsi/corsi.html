@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -86,77 +87,313 @@
           </ul>
           <a href="#" class="pricing-table__button">Acquista ora!</a>
         </li>
+=======
+>>>>>>> 8d84bcf2f269e6d85bda4f0918b2800421bca3c5
 
-        <!-- Second Box -->
-        <li class="pricing-table__item">
-          <img
-            src="../../assets/PNG_Images/logo-removebg.png"
-            alt="Logo Domna"
-            class="pricing-table__img"
-          />
-          <h3 class="pricing-table__title">Formula Semestrale</h3>
-          <p class="pricing-table__description">
-            <span class="pricing-table__price"><strike>235€</strike> 227€</span>
-            <span class="pricing-table__label">Iva inclusa</span>
-          </p>
-          <ul class="pricing-table__products">
-            <li class="pricing-table__product pricing-table__product--included">
-              Preparazione
-            </li>
-            <li class="pricing-table__product pricing-table__product--included">
-              Pancia piatta
-            </li>
-            <li class="pricing-table__product pricing-table__product--included">
-              Tonifica
-            </li>
-            <li class="pricing-table__product pricing-table__product--excluded">
-              <strike>Anticellulite</strike>
-            </li>
-            <li class="pricing-table__product pricing-table__product--excluded">
-              <strike>LIVE</strike>
-            </li>
-            <li class="pricing-table__product pricing-table__product--excluded">
-              <strike>Bonus video decontrazione</strike>
-            </li>
-          </ul>
-          <a href="#" class="pricing-table__button">Acquista ora!</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Layout</title>
+  <!-- Import Josefin Sans from Google Fonts -->
+  <!-- Home Page and Corsi Page Head Section -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="corsi.css">
+  <script src="corsi.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../../assets/PNG_Images/logo-removebg.png" id="logonav" alt="Domna Logo" />
+      </div>
+      <ul class="nav-menu">
+        <li>
+          <a href="home.html">Home</a>
         </li>
-
-        <!-- Third Box -->
-        <li class="pricing-table__item">
-          <img
-            src="../../assets/PNG_Images/logo-removebg.png"
-            alt="Logo Domna"
-            class="pricing-table__img"
-          />
-          <h3 class="pricing-table__title">Formula Annuale</h3>
-          <p class="pricing-table__description">
-            <span class="pricing-table__price"><strike>470€</strike> 435€</span>
-            <span class="pricing-table__label">Iva inclusa</span>
-          </p>
-          <ul class="pricing-table__products">
-            <li class="pricing-table__product pricing-table__product--included">
-              Preparazione
-            </li>
-            <li class="pricing-table__product pricing-table__product--included">
-              Pancia piatta
-            </li>
-            <li class="pricing-table__product pricing-table__product--included">
-              Tonifica
-            </li>
-            <li class="pricing-table__product pricing-table__product--excluded">
-              <strike>Anticellulite</strike>
-            </li>
-            <li class="pricing-table__product pricing-table__product--excluded">
-              <strike>LIVE</strike>
-            </li>
-            <li class="pricing-table__product pricing-table__product--excluded">
-              <strike>Bonus video decontrazione</strike>
-            </li>
-          </ul>
-          <a href="#" class="pricing-table__button">Acquista ora!</a>
+        <li>
+          <a href="../About/about.html">About</a>
+        </li>
+        <li>
+          <a href="../Corsi/corsi.html" style="text-decoration: underline;">Corsi</a>
+        </li>
+        <li>
+          <a href="../Blog/blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="../Profile/profile.html">Profilo</a>
         </li>
       </ul>
+    </nav>
+    <!-- Main text content -->
+    <div class="hero-text">
+      <h1 style="font-weight: lighter;">CORSI</h1>
+
     </div>
-  </body>
+
+    <!-- Social icons -->
+
+
+    <!-- Bouncing arrow -->
+    <div class="bounce-arrow">
+      <a href="#prima-sezione">
+        <i class="fas fa-chevron-down" id="bounceArr" style="color: pink"></i>
+      </a>
+    </div>
+  </section>
+
+
+  <div class="parallax-section-1-marginFiller" id="prima-sezione">
+    <p class="review-testimonial-text">DOMNA</p>
+  </div>
+
+
+
+  <hr class="full-width-line"> <!-- Full-width line outside container -->
+  <div class="container">
+    <div class="left-column">
+      <h1 class="product-title">Postpartum Training - 6-Month - Return to Fitness</h1>
+      <p class="price">$240.00 <del>$450.00</del></p>
+      <div class="quantity-container">
+        <label class="quantity-label" for="quantity">Quantity:</label>
+        <input class="quantity-input" type="number" id="quantity" name="quantity" value="1" min="1">
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="right-column">
+      <ul class="features-list">
+        <li>4 Phase Payment plan (pay at each 6-week phase) or Pay in Full at a discount</li>
+        <li>Can start as early as Week 1 Postpartum</li>
+        <li>Diastasis Recti recovery focus & guidance</li>
+        <li>Pelvic Floor recovery focus & guidance</li>
+        <li>Get into functional mom strength the right way</li>
+        <li>Weekly check-in with Brit + zoom call with each phase</li>
+        <li>Weekly exercise guidance (with tutorial videos)</li>
+        <li>Weekly mental health tips & guidance</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="full-width-line"> <!-- Full-width line outside container -->
+
+  <div class="section-title">
+    <span>What to Expect</span>
+    <span>+</span>
+  </div>
+  <div class="section-content">
+    <p>This is the expanded content that shows what to expect. Add more details here.</p>
+  </div>
+
+  <div class="separator-courses">
+    
+  </div>
+
+  <hr class="full-width-line"> <!-- Full-width line outside container -->
+
+
+<div class="container">
+    <div class="left-column">
+      <h1 class="product-title">Postpartum Training - 6-Month - Return to Fitness</h1>
+      <p class="price">$240.00 <del>$450.00</del></p>
+      <div class="quantity-container">
+        <label class="quantity-label" for="quantity">Quantity:</label>
+        <input class="quantity-input" type="number" id="quantity" name="quantity" value="1" min="1">
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="right-column">
+      <ul class="features-list">
+        <li>4 Phase Payment plan (pay at each 6-week phase) or Pay in Full at a discount</li>
+        <li>Can start as early as Week 1 Postpartum</li>
+        <li>Diastasis Recti recovery focus & guidance</li>
+        <li>Pelvic Floor recovery focus & guidance</li>
+        <li>Get into functional mom strength the right way</li>
+        <li>Weekly check-in with Brit + zoom call with each phase</li>
+        <li>Weekly exercise guidance (with tutorial videos)</li>
+        <li>Weekly mental health tips & guidance</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="full-width-line"> <!-- Full-width line outside container -->
+
+  <div class="section-title">
+    <span>What to Expect</span>
+    <span>+</span>
+  </div>
+  <div class="section-content">
+    <p>This is the expanded content that shows what to expect. Add more details here.</p>
+  </div>
+
+  <div class="separator-courses">
+
+  </div>
+  <hr class="full-width-line"> <!-- Full-width line outside container -->
+  <div class="container">
+    <div class="left-column">
+      <h1 class="product-title">Postpartum Training - 6-Month - Return to Fitness</h1>
+      <p class="price">$240.00 <del>$450.00</del></p>
+      <div class="quantity-container">
+        <label class="quantity-label" for="quantity">Quantity:</label>
+        <input class="quantity-input" type="number" id="quantity" name="quantity" value="1" min="1">
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="right-column">
+      <ul class="features-list">
+        <li>4 Phase Payment plan (pay at each 6-week phase) or Pay in Full at a discount</li>
+        <li>Can start as early as Week 1 Postpartum</li>
+        <li>Diastasis Recti recovery focus & guidance</li>
+        <li>Pelvic Floor recovery focus & guidance</li>
+        <li>Get into functional mom strength the right way</li>
+        <li>Weekly check-in with Brit + zoom call with each phase</li>
+        <li>Weekly exercise guidance (with tutorial videos)</li>
+        <li>Weekly mental health tips & guidance</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="full-width-line"> <!-- Full-width line outside container -->
+
+  <div class="section-title">
+    <span>What to Expect</span>
+    <span>+</span>
+  </div>
+  <div class="section-content">
+    <p>This is the expanded content that shows what to expect. Add more details here.</p>
+  </div>
+
+
+  
+
+
+  <div class="parallax-section-1-marginFiller" id="prima-sezione">
+    <p class="review-testimonial-text">DOMNA + LIVE</p>
+  </div>
+  <hr class="full-width-line"> <!-- Full-width line outside container -->
+  <div class="container">
+    <div class="left-column">
+      <h1 class="product-title">Postpartum Training - 6-Month - Return to Fitness</h1>
+      <p class="price">$240.00 <del>$450.00</del></p>
+      <div class="quantity-container">
+        <label class="quantity-label" for="quantity">Quantity:</label>
+        <input class="quantity-input" type="number" id="quantity" name="quantity" value="1" min="1">
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="right-column">
+      <ul class="features-list">
+        <li>4 Phase Payment plan (pay at each 6-week phase) or Pay in Full at a discount</li>
+        <li>Can start as early as Week 1 Postpartum</li>
+        <li>Diastasis Recti recovery focus & guidance</li>
+        <li>Pelvic Floor recovery focus & guidance</li>
+        <li>Get into functional mom strength the right way</li>
+        <li>Weekly check-in with Brit + zoom call with each phase</li>
+        <li>Weekly exercise guidance (with tutorial videos)</li>
+        <li>Weekly mental health tips & guidance</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="full-width-line"> <!-- Full-width line outside container -->
+
+  <div class="section-title">
+    <span>What to Expect</span>
+    <span>+</span>
+  </div>
+  <div class="section-content">
+    <p>This is the expanded content that shows what to expect. Add more details here.</p>
+  </div>
+
+  <div class="separator-courses">
+    
+  </div>
+
+  <hr class="full-width-line"> <!-- Full-width line outside container -->
+
+
+<div class="container">
+    <div class="left-column">
+      <h1 class="product-title">Postpartum Training - 6-Month - Return to Fitness</h1>
+      <p class="price">$240.00 <del>$450.00</del></p>
+      <div class="quantity-container">
+        <label class="quantity-label" for="quantity">Quantity:</label>
+        <input class="quantity-input" type="number" id="quantity" name="quantity" value="1" min="1">
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="right-column">
+      <ul class="features-list">
+        <li>4 Phase Payment plan (pay at each 6-week phase) or Pay in Full at a discount</li>
+        <li>Can start as early as Week 1 Postpartum</li>
+        <li>Diastasis Recti recovery focus & guidance</li>
+        <li>Pelvic Floor recovery focus & guidance</li>
+        <li>Get into functional mom strength the right way</li>
+        <li>Weekly check-in with Brit + zoom call with each phase</li>
+        <li>Weekly exercise guidance (with tutorial videos)</li>
+        <li>Weekly mental health tips & guidance</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="full-width-line"> <!-- Full-width line outside container -->
+
+  <div class="section-title">
+    <span>What to Expect</span>
+    <span>+</span>
+  </div>
+  <div class="section-content">
+    <p>This is the expanded content that shows what to expect. Add more details here.</p>
+  </div>
+
+  <div class="separator-courses">
+
+  </div>
+  <hr class="full-width-line"> <!-- Full-width line outside container -->
+  <div class="container">
+    <div class="left-column">
+      <h1 class="product-title">Postpartum Training - 6-Month - Return to Fitness</h1>
+      <p class="price">$240.00 <del>$450.00</del></p>
+      <div class="quantity-container">
+        <label class="quantity-label" for="quantity">Quantity:</label>
+        <input class="quantity-input" type="number" id="quantity" name="quantity" value="1" min="1">
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="right-column">
+      <ul class="features-list">
+        <li>4 Phase Payment plan (pay at each 6-week phase) or Pay in Full at a discount</li>
+        <li>Can start as early as Week 1 Postpartum</li>
+        <li>Diastasis Recti recovery focus & guidance</li>
+        <li>Pelvic Floor recovery focus & guidance</li>
+        <li>Get into functional mom strength the right way</li>
+        <li>Weekly check-in with Brit + zoom call with each phase</li>
+        <li>Weekly exercise guidance (with tutorial videos)</li>
+        <li>Weekly mental health tips & guidance</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="full-width-line"> <!-- Full-width line outside container -->
+
+  <div class="section-title">
+    <span>What to Expect</span>
+    <span>+</span>
+  </div>
+  <div class="section-content">
+    <p>This is the expanded content that shows what to expect. Add more details here.</p>
+  </div>
+  <div class="separator-courses">
+
+    
+</body>
+
 </html>
