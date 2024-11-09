@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">Admin Panel</div>
+            <ul class="menu">
+                <li class="menu-item active" onclick="showContent('corsi')"><i class="fas fa-book"></i> Corsi</li>
+                <li class="menu-item" onclick="showContent('blog')"><i class="fas fa-pen"></i> Blog</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="top-bar">
+                <input type="text" class="search-bar" placeholder="Cerca un corso o un blog...">
+                <button class="create-btn" onclick="openForm()">+ Crea Nuovo</button>
+            </div>
+            <h2>Benvenuto, Admin!</h2>
+            <div class="content-section" id="corsi">
+                <h3>Corsi Disponibili</h3>
+                <div id="courseContainer" class="content-list">
+                    <!-- I corsi verranno aggiunti qui -->
+                </div>
+            </div>
+            <div class="content-section" id="blog">
+                <h3>Blog Disponibili</h3>
+                <div id="blogContainer" class="blog-container">
+                    <!-- I blog verranno aggiunti qui -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Modal -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeForm()">&times;</span>
+            <h3>Inserisci i Dettagli</h3>
+            <div id="formContainer"></div>
+            <button class="submit-btn" onclick="createCard()">Crea</button>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

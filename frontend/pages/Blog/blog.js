@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".blog-container").forEach((container) => {
     const posts = container.querySelectorAll(".blog-post");
     posts.forEach((post, index) => {
-      if (index >= 5) {
+      if (index >= 6) {
         post.classList.add("extra-post"); // Mark as initially hidden
         post.style.display = "none"; // Hide posts beyond the sixth
       }
