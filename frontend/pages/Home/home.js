@@ -132,3 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize the first background when the page loads
   fadeInOutBackground();
 });
+
+document.getElementById("hamburgerMenu").addEventListener("click", function () {
+  document.getElementById("navMenu").classList.toggle("show");
+});

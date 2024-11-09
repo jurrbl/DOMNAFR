@@ -6,6 +6,9 @@ body {
     background-color: #f8f9fa;
 }
 
+*{
+    font-family: Josefin Sans;
+}
 .dashboard-container {
     display: flex;
     width: 100%;
@@ -14,7 +17,7 @@ body {
 
 .sidebar {
     width: 20%;
-    background-color: #e91e63;
+    background-color: #f29aa0;
     color: white;
     padding: 20px;
     display: flex;

@@ -15,6 +15,23 @@ document.querySelector('.login-form').addEventListener('submit', function(event)
     document.getElementById('selected-course').textContent = "Corso di Yoga Avanzato";
 });
 
+
+function toggleAccordion(id) {
+    const content = document.getElementById(id);
+    const isOpen = content.classList.contains('open');
+    
+    if (isOpen) {
+        content.classList.remove('open');
+        content.style.maxHeight = null;
+        content.previousElementSibling.querySelector('.accordion-toggle').textContent = '+';
+    } else {
+        content.classList.add('open');
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.previousElementSibling.querySelector('.accordion-toggle').textContent = '−';
+    }
+}
+
+  
 // Funzione per il logout
 function logout() {
     // Nasconde la sezione del profilo e mostra il form di login e la sezione parallax

@@ -179,3 +179,68 @@ button:hover {
 .profile-content p strong {
   color: #ff4d94;
 }
+
+
+
+
+.accordion {
+  width: 100%; /* Assicura che riempia l'intera larghezza disponibile */
+  max-width: 600px;
+  margin: 0; /* Rimuovi i margini laterali */
+}
+
+.accordion-item {
+}
+
+.accordion-header {
+  padding: 15px;
+  cursor: pointer;
+  color: #ff4d94;
+  
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.accordion-toggle {
+  font-size: 1.2rem;
+}
+
+.accordion-content {
+  padding: 0 15px;
+  color: #333;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.accordion-content ul {
+  padding: 10px;
+  list-style-type: circle;
+  margin: 0;
+}
+
+.accordion-content li {
+  margin-bottom: 5px;
+}
+
+.accordion-content {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 15px;
+  color: #333;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.accordion-item.open .accordion-content {
+  max-height: 500px; /* Imposta un'altezza massima sufficiente per mostrare il contenuto */
+}
+.accordion-content a {
+  color: #ff4d94;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.accordion-content a:hover {
+  text-decoration: underline;
+}
